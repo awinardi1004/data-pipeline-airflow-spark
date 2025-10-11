@@ -1,0 +1,1 @@
+[2025-10-10T14:11:15.763+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: test_spark_connection.test_spark manual__2025-10-10T14:11:14.495692+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
