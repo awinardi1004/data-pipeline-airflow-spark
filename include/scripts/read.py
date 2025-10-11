@@ -5,7 +5,7 @@ def main():
         .appName("PySpark Example") \
         .getOrCreate()
     
-    df = spark.read.csv("/opt/airflow/dags/data.csv", header="true")
+    df = spark.read.csv("/opt/airflow/include/data.csv", header="true")
     df.show()
     
     spark.stop()

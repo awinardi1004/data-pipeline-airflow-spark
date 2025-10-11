@@ -16,7 +16,7 @@ def my_dag():
     submit_job = SparkSubmitOperator(
         task_id="submit_job",
         conn_id="my_spark_conn",
-        application="/opt/airflow/dags/read.py",
+        application="/opt/airflow/include/scripts/read.py",
         verbose=True,
     )
     
