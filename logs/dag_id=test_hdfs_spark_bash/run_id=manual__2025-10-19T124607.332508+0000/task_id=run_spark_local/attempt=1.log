@@ -1,0 +1,48 @@
+[2025-10-19T12:47:15.958+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_hdfs_spark_bash.run_spark_local manual__2025-10-19T12:46:07.332508+00:00 [queued]>
+[2025-10-19T12:47:16.068+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_hdfs_spark_bash.run_spark_local manual__2025-10-19T12:46:07.332508+00:00 [queued]>
+[2025-10-19T12:47:16.072+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-10-19T12:47:16.203+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_spark_local> on 2025-10-19 12:46:07.332508+00:00
+[2025-10-19T12:47:16.253+0000] {standard_task_runner.py:60} INFO - Started process 208 to run task
+[2025-10-19T12:47:16.304+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'test_hdfs_spark_bash', 'run_spark_local', 'manual__2025-10-19T12:46:07.332508+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/test_hdfs_spark.py', '--cfg-path', '/tmp/tmpklzy0873']
+[2025-10-19T12:47:16.336+0000] {standard_task_runner.py:88} INFO - Job 140: Subtask run_spark_local
+[2025-10-19T12:47:16.312+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: test_hdfs_spark_bash.run_spark_local manual__2025-10-19T12:46:07.332508+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-10-19T12:47:16.414+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: test_hdfs_spark_bash.run_spark_local manual__2025-10-19T12:46:07.332508+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-10-19T12:47:16.440+0000] {local_task_job_runner.py:160} INFO - Task is not able to be run
+[2025-10-19T12:47:17.451+0000] {task_command.py:423} INFO - Running <TaskInstance: test_hdfs_spark_bash.run_spark_local manual__2025-10-19T12:46:07.332508+00:00 [running]> on host 2ef039423968
+[2025-10-19T12:47:17.914+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_hdfs_spark_bash' AIRFLOW_CTX_TASK_ID='run_spark_local' AIRFLOW_CTX_EXECUTION_DATE='2025-10-19T12:46:07.332508+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-19T12:46:07.332508+00:00'
+[2025-10-19T12:47:17.932+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-19T12:47:17.945+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'spark-submit --master local C:/Users/User/Documents/Data_engineer/my_project/***_project/dags/hdfs_spark_test.py']
+[2025-10-19T12:47:18.038+0000] {subprocess.py:86} INFO - Output:
+[2025-10-19T12:48:44.029+0000] {subprocess.py:93} INFO - 25/10/19 12:48:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-10-19T12:48:46.025+0000] {subprocess.py:93} INFO - Exception in thread "main" org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+[2025-10-19T12:48:46.027+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+[2025-10-19T12:48:46.028+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+[2025-10-19T12:48:46.029+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+[2025-10-19T12:48:46.030+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+[2025-10-19T12:48:46.031+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+[2025-10-19T12:48:46.032+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+[2025-10-19T12:48:46.033+0000] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.getHadoopFileSystem(Utils.scala:1831)
+[2025-10-19T12:48:46.034+0000] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.doFetchFile(Utils.scala:727)
+[2025-10-19T12:48:46.034+0000] {subprocess.py:93} INFO - 	at org.apache.spark.util.DependencyUtils$.downloadFile(DependencyUtils.scala:264)
+[2025-10-19T12:48:46.036+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.$anonfun$prepareSubmitEnvironment$8(SparkSubmit.scala:404)
+[2025-10-19T12:48:46.037+0000] {subprocess.py:93} INFO - 	at scala.Option.map(Option.scala:230)
+[2025-10-19T12:48:46.038+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:404)
+[2025-10-19T12:48:46.039+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:964)
+[2025-10-19T12:48:46.040+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+[2025-10-19T12:48:46.041+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+[2025-10-19T12:48:46.043+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+[2025-10-19T12:48:46.044+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2025-10-19T12:48:46.048+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2025-10-19T12:48:46.048+0000] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2025-10-19T12:48:46.278+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-19T12:48:46.304+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-19T12:48:46.331+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=test_hdfs_spark_bash, task_id=run_spark_local, execution_date=20251019T124607, start_date=20251019T124715, end_date=20251019T124846
+[2025-10-19T12:48:46.369+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 140 for task run_spark_local (Bash command failed. The command returned a non-zero exit code 1.; 208)
+[2025-10-19T12:48:46.427+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-19T12:48:46.501+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

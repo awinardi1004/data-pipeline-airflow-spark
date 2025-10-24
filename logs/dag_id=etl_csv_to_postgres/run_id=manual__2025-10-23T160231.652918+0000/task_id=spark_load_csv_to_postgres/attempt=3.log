@@ -1,0 +1,2 @@
+[2025-10-24T01:38:53.974+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: etl_csv_to_postgres.spark_load_csv_to_postgres manual__2025-10-23T16:02:31.652918+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-10-24T01:38:54.107+0000] {local_task_job_runner.py:160} INFO - Task is not able to be run

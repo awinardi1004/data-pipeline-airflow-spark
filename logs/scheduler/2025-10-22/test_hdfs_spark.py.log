@@ -1,0 +1,133 @@
+[2025-10-22T13:34:32.478+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:34:32.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:34:32.526+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:34:32.525+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:34:32.850+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:34:33.966+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:34:33.965+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:34:34.077+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:34:34.076+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:34:34.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 1.781 seconds
+[2025-10-22T13:35:06.272+0000] {processor.py:161} INFO - Started process (PID=57) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:06.324+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:35:06.474+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:06.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:07.460+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:09.271+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:09.270+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:35:09.767+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:09.767+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:35:10.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 4.219 seconds
+[2025-10-22T13:35:42.200+0000] {processor.py:161} INFO - Started process (PID=66) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:42.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:35:42.768+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:42.767+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:44.269+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:35:45.780+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:45.780+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:35:46.262+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:35:46.261+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:35:46.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 4.636 seconds
+[2025-10-22T13:36:18.090+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:18.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:36:18.316+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:18.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:18.870+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:20.172+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:20.171+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:36:24.281+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:24.280+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:36:24.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 6.693 seconds
+[2025-10-22T13:36:55.590+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:55.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:36:55.772+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:55.771+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:56.065+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:36:56.679+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:56.675+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:36:57.019+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:36:57.019+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:36:57.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 1.940 seconds
+[2025-10-22T13:37:27.895+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:37:27.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:37:27.904+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:37:27.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:37:27.942+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:37:28.015+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:37:28.014+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:37:28.049+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:37:28.049+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:37:28.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.261 seconds
+[2025-10-22T13:37:58.981+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:37:58.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:37:58.987+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:37:58.986+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:37:59.014+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:38:03.826+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:38:03.825+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:38:03.864+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:38:03.864+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:38:03.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.429 seconds
+[2025-10-22T13:38:34.379+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:38:34.384+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:38:34.390+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:38:34.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:38:34.446+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:38:34.506+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:38:34.506+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:38:34.527+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:38:34.527+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:38:34.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.203 seconds
+[2025-10-22T13:39:04.728+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:04.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:39:04.734+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:04.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:04.770+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:04.820+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:04.820+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:39:04.839+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:04.839+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:39:04.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.173 seconds
+[2025-10-22T13:39:35.328+0000] {processor.py:161} INFO - Started process (PID=133) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:35.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:39:35.333+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:35.333+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:35.406+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:39:35.490+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:35.489+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:39:35.516+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:39:35.515+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:39:35.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.292 seconds
+[2025-10-22T13:40:06.180+0000] {processor.py:161} INFO - Started process (PID=143) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:06.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:40:06.192+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:06.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:06.394+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:06.460+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:06.460+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:40:06.486+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:06.485+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:40:06.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.434 seconds
+[2025-10-22T13:40:37.072+0000] {processor.py:161} INFO - Started process (PID=147) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:37.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:40:37.078+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:37.077+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:37.099+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:40:37.428+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:37.428+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:40:37.460+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:40:37.459+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:40:37.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.470 seconds
+[2025-10-22T13:41:07.698+0000] {processor.py:161} INFO - Started process (PID=157) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:07.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:41:07.705+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:07.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:07.734+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:08.056+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:08.054+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:41:08.090+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:08.089+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:41:08.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.546 seconds
+[2025-10-22T13:41:38.397+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:38.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:41:38.407+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:38.406+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:38.437+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:41:38.478+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:38.478+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:41:38.505+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:41:38.505+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:41:38.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.278 seconds
+[2025-10-22T13:42:09.945+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:09.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:42:09.954+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:09.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:09.998+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:10.087+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:10.086+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:42:10.153+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:10.152+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:42:10.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.348 seconds
+[2025-10-22T13:42:42.643+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:42.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:42:42.665+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:42.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:42.842+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:42:42.964+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:42.963+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:42:43.084+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:42:43.084+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:42:43.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.661 seconds
+[2025-10-22T13:43:14.935+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:14.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:43:14.946+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:14.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:15.002+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:15.139+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:15.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:43:15.307+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:15.304+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:43:15.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.447 seconds
+[2025-10-22T13:43:47.903+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:47.906+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:43:47.913+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:47.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:47.958+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:43:48.216+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:48.215+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:43:48.248+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:43:48.248+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:43:48.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.498 seconds
+[2025-10-22T13:44:20.703+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:44:20.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_hdfs_spark.py for tasks to queue
+[2025-10-22T13:44:20.716+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:44:20.716+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:44:20.765+0000] {processor.py:840} INFO - DAG(s) 'test_hdfs_spark_bash' retrieved from /opt/airflow/dags/test_hdfs_spark.py
+[2025-10-22T13:44:20.898+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:44:20.897+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-10-22T13:44:20.952+0000] {logging_mixin.py:188} INFO - [2025-10-22T13:44:20.951+0000] {dag.py:3823} INFO - Setting next_dagrun for test_hdfs_spark_bash to None, run_after=None
+[2025-10-22T13:44:21.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_hdfs_spark.py took 0.333 seconds

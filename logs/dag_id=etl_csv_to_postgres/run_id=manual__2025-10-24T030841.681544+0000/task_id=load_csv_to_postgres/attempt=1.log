@@ -1,0 +1,263 @@
+[2025-10-24T03:08:49.210+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_to_postgres.load_csv_to_postgres manual__2025-10-24T03:08:41.681544+00:00 [queued]>
+[2025-10-24T03:08:49.268+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_to_postgres.load_csv_to_postgres manual__2025-10-24T03:08:41.681544+00:00 [queued]>
+[2025-10-24T03:08:49.269+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-10-24T03:08:49.532+0000] {taskinstance.py:2191} INFO - Executing <Task(SparkSubmitOperator): load_csv_to_postgres> on 2025-10-24 03:08:41.681544+00:00
+[2025-10-24T03:08:49.556+0000] {standard_task_runner.py:60} INFO - Started process 1470 to run task
+[2025-10-24T03:08:49.612+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_to_postgres', 'load_csv_to_postgres', 'manual__2025-10-24T03:08:41.681544+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/dag_csv_to_postgres_dag.py', '--cfg-path', '/tmp/tmp2os5ggcj']
+[2025-10-24T03:08:49.616+0000] {standard_task_runner.py:88} INFO - Job 184: Subtask load_csv_to_postgres
+[2025-10-24T03:08:49.878+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_csv_to_postgres.load_csv_to_postgres manual__2025-10-24T03:08:41.681544+00:00 [running]> on host 2ef039423968
+[2025-10-24T03:08:50.389+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_to_postgres' AIRFLOW_CTX_TASK_ID='load_csv_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-10-24T03:08:41.681544+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-24T03:08:41.681544+00:00'
+[2025-10-24T03:08:50.424+0000] {base.py:83} INFO - Using connection ID 'spark_conn' for task execution.
+[2025-10-24T03:08:50.428+0000] {spark_submit.py:341} INFO - Spark-Submit cmd: spark-submit --master local --name arrow-spark --verbose /opt/***/include/scripts/load_csv_to_postgres.py
+[2025-10-24T03:09:27.824+0000] {spark_submit.py:492} INFO - Using properties file: null
+[2025-10-24T03:09:28.625+0000] {spark_submit.py:492} INFO - Parsed arguments:
+[2025-10-24T03:09:28.626+0000] {spark_submit.py:492} INFO - master                  local
+[2025-10-24T03:09:28.627+0000] {spark_submit.py:492} INFO - remote                  null
+[2025-10-24T03:09:28.628+0000] {spark_submit.py:492} INFO - deployMode              null
+[2025-10-24T03:09:28.628+0000] {spark_submit.py:492} INFO - executorMemory          null
+[2025-10-24T03:09:28.629+0000] {spark_submit.py:492} INFO - executorCores           null
+[2025-10-24T03:09:28.692+0000] {spark_submit.py:492} INFO - totalExecutorCores      null
+[2025-10-24T03:09:28.695+0000] {spark_submit.py:492} INFO - propertiesFile          null
+[2025-10-24T03:09:28.702+0000] {spark_submit.py:492} INFO - driverMemory            null
+[2025-10-24T03:09:28.705+0000] {spark_submit.py:492} INFO - driverCores             null
+[2025-10-24T03:09:28.707+0000] {spark_submit.py:492} INFO - driverExtraClassPath    null
+[2025-10-24T03:09:28.710+0000] {spark_submit.py:492} INFO - driverExtraLibraryPath  null
+[2025-10-24T03:09:28.713+0000] {spark_submit.py:492} INFO - driverExtraJavaOptions  null
+[2025-10-24T03:09:28.715+0000] {spark_submit.py:492} INFO - supervise               false
+[2025-10-24T03:09:28.717+0000] {spark_submit.py:492} INFO - queue                   null
+[2025-10-24T03:09:28.722+0000] {spark_submit.py:492} INFO - numExecutors            null
+[2025-10-24T03:09:28.805+0000] {spark_submit.py:492} INFO - files                   null
+[2025-10-24T03:09:28.812+0000] {spark_submit.py:492} INFO - pyFiles                 null
+[2025-10-24T03:09:28.813+0000] {spark_submit.py:492} INFO - archives                null
+[2025-10-24T03:09:28.815+0000] {spark_submit.py:492} INFO - mainClass               null
+[2025-10-24T03:09:28.816+0000] {spark_submit.py:492} INFO - primaryResource         file:/opt/***/include/scripts/load_csv_to_postgres.py
+[2025-10-24T03:09:28.818+0000] {spark_submit.py:492} INFO - name                    arrow-spark
+[2025-10-24T03:09:28.819+0000] {spark_submit.py:492} INFO - childArgs               []
+[2025-10-24T03:09:28.819+0000] {spark_submit.py:492} INFO - jars                    null
+[2025-10-24T03:09:28.821+0000] {spark_submit.py:492} INFO - packages                null
+[2025-10-24T03:09:28.822+0000] {spark_submit.py:492} INFO - packagesExclusions      null
+[2025-10-24T03:09:28.823+0000] {spark_submit.py:492} INFO - repositories            null
+[2025-10-24T03:09:28.826+0000] {spark_submit.py:492} INFO - verbose                 true
+[2025-10-24T03:09:28.828+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:28.829+0000] {spark_submit.py:492} INFO - Spark properties used, including those specified through
+[2025-10-24T03:09:28.831+0000] {spark_submit.py:492} INFO - --conf and those from the properties file null:
+[2025-10-24T03:09:28.832+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:28.834+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:28.835+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:31.340+0000] {spark_submit.py:492} INFO - Main class:
+[2025-10-24T03:09:31.342+0000] {spark_submit.py:492} INFO - org.apache.spark.deploy.PythonRunner
+[2025-10-24T03:09:31.392+0000] {spark_submit.py:492} INFO - Arguments:
+[2025-10-24T03:09:31.394+0000] {spark_submit.py:492} INFO - file:/opt/***/include/scripts/load_csv_to_postgres.py
+[2025-10-24T03:09:31.395+0000] {spark_submit.py:492} INFO - null
+[2025-10-24T03:09:31.411+0000] {spark_submit.py:492} INFO - Spark config:
+[2025-10-24T03:09:31.413+0000] {spark_submit.py:492} INFO - (spark.app.name,arrow-spark)
+[2025-10-24T03:09:31.414+0000] {spark_submit.py:492} INFO - (spark.app.submitTime,1761275371192)
+[2025-10-24T03:09:31.415+0000] {spark_submit.py:492} INFO - (spark.master,local)
+[2025-10-24T03:09:31.417+0000] {spark_submit.py:492} INFO - (spark.submit.deployMode,client)
+[2025-10-24T03:09:31.418+0000] {spark_submit.py:492} INFO - (spark.submit.pyFiles,)
+[2025-10-24T03:09:31.419+0000] {spark_submit.py:492} INFO - Classpath elements:
+[2025-10-24T03:09:31.420+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:31.421+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:31.422+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:09:59.623+0000] {spark_submit.py:492} INFO - [[34m2025-10-24T03:09:59.620+0000[0m] {[34mbase.py:[0m83} INFO[0m - Using connection ID 'pg_conn' for task execution.[0m
+[2025-10-24T03:10:01.612+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:01 INFO SparkContext: Running Spark version 3.5.1
+[2025-10-24T03:10:01.626+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:01 INFO SparkContext: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+[2025-10-24T03:10:01.630+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:01 INFO SparkContext: Java version 17.0.16
+[2025-10-24T03:10:02.706+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-10-24T03:10:04.195+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceUtils: ==============================================================
+[2025-10-24T03:10:04.196+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-10-24T03:10:04.197+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceUtils: ==============================================================
+[2025-10-24T03:10:04.198+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO SparkContext: Submitted application: Load CSV to Postgres
+[2025-10-24T03:10:04.499+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-10-24T03:10:04.619+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceProfile: Limiting resource is cpu
+[2025-10-24T03:10:04.624+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:04 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-10-24T03:10:05.802+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:05 INFO SecurityManager: Changing view acls to: ***
+[2025-10-24T03:10:05.808+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:05 INFO SecurityManager: Changing modify acls to: ***
+[2025-10-24T03:10:05.878+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:05 INFO SecurityManager: Changing view acls groups to:
+[2025-10-24T03:10:05.882+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:05 INFO SecurityManager: Changing modify acls groups to:
+[2025-10-24T03:10:05.886+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ***; groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY
+[2025-10-24T03:10:09.978+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:09 INFO Utils: Successfully started service 'sparkDriver' on port 40123.
+[2025-10-24T03:10:10.680+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:10 INFO SparkEnv: Registering MapOutputTracker
+[2025-10-24T03:10:14.081+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:14 INFO SparkEnv: Registering BlockManagerMaster
+[2025-10-24T03:10:14.525+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-10-24T03:10:14.567+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-10-24T03:10:14.667+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-10-24T03:10:15.109+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:15 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-50c62119-090a-47c6-9733-51336b878cfa
+[2025-10-24T03:10:15.192+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:15 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+[2025-10-24T03:10:15.265+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:15 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-10-24T03:10:16.089+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:16 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-10-24T03:10:16.569+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2025-10-24T03:10:17.970+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:17 INFO Executor: Starting executor ID driver on host 2ef039423968
+[2025-10-24T03:10:17.973+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:17 INFO Executor: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+[2025-10-24T03:10:17.979+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:17 INFO Executor: Java version 17.0.16
+[2025-10-24T03:10:18.757+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:18 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2025-10-24T03:10:18.759+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:18 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@36e34fd0 for default.
+[2025-10-24T03:10:19.288+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36147.
+[2025-10-24T03:10:19.289+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO NettyBlockTransferService: Server created on 2ef039423968:36147
+[2025-10-24T03:10:19.293+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-10-24T03:10:19.368+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2ef039423968, 36147, None)
+[2025-10-24T03:10:19.382+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO BlockManagerMasterEndpoint: Registering block manager 2ef039423968:36147 with 413.9 MiB RAM, BlockManagerId(driver, 2ef039423968, 36147, None)
+[2025-10-24T03:10:19.388+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2ef039423968, 36147, None)
+[2025-10-24T03:10:19.456+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:19 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2ef039423968, 36147, None)
+[2025-10-24T03:10:25.317+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:25 INFO AsyncEventQueue: Process of event SparkListenerResourceProfileAdded(Profile: id = 0, executor resources: cores -> name: cores, amount: 1, script: , vendor: ,memory -> name: memory, amount: 1024, script: , vendor: ,offHeap -> name: offHeap, amount: 0, script: , vendor: , task resources: cpus -> name: cpus, amount: 1.0) by listener HeartbeatReceiver took 2.436113375s.
+[2025-10-24T03:10:25.557+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:25 INFO AsyncEventQueue: Process of event SparkListenerResourceProfileAdded(Profile: id = 0, executor resources: cores -> name: cores, amount: 1, script: , vendor: ,memory -> name: memory, amount: 1024, script: , vendor: ,offHeap -> name: offHeap, amount: 0, script: , vendor: , task resources: cpus -> name: cpus, amount: 1.0) by listener AppStatusListener took 2.694964635s.
+[2025-10-24T03:10:27.454+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:27 INFO AsyncEventQueue: Process of event SparkListenerExecutorAdded(1761275419192,driver,org.apache.spark.scheduler.cluster.ExecutorInfo@e05df220) by listener AppStatusListener took 1.801244543s.
+[2025-10-24T03:10:30.357+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:30 INFO AsyncEventQueue: Process of event SparkListenerApplicationStart(Load CSV to Postgres,Some(local-1761275417461),1761275401481,***,None,None,None) by listener AppStatusListener took 1.899186065s.
+[2025-10-24T03:10:38.777+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:38 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-10-24T03:10:39.182+0000] {spark_submit.py:492} INFO - 25/10/24 03:10:39 INFO SharedState: Warehouse path is 'file:/opt/***/spark-warehouse'.
+[2025-10-24T03:11:01.682+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:01 INFO InMemoryFileIndex: It took 897 ms to list leaf files for 1 paths.
+[2025-10-24T03:11:03.087+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:03 INFO InMemoryFileIndex: It took 265 ms to list leaf files for 1 paths.
+[2025-10-24T03:11:45.925+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:45 INFO FileSourceStrategy: Pushed Filters:
+[2025-10-24T03:11:46.008+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:46 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+[2025-10-24T03:11:57.177+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:57 INFO CodeGenerator: Code generated in 4818.579202 ms
+[2025-10-24T03:11:58.163+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:58 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.6 KiB, free 413.7 MiB)
+[2025-10-24T03:11:59.364+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:59 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 413.7 MiB)
+[2025-10-24T03:11:59.376+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:59 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2ef039423968:36147 (size: 34.2 KiB, free: 413.9 MiB)
+[2025-10-24T03:11:59.455+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:59 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+[2025-10-24T03:11:59.740+0000] {spark_submit.py:492} INFO - 25/10/24 03:11:59 INFO FileSourceScanExec: Planning scan with bin packing, max size: 49020463 bytes, open cost is considered as scanning 4194304 bytes.
+[2025-10-24T03:12:02.063+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+[2025-10-24T03:12:02.347+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2025-10-24T03:12:02.352+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+[2025-10-24T03:12:02.353+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO DAGScheduler: Parents of final stage: List()
+[2025-10-24T03:12:02.360+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO DAGScheduler: Missing parents: List()
+[2025-10-24T03:12:02.443+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:02 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2025-10-24T03:12:03.852+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:03 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 13.5 KiB, free 413.7 MiB)
+[2025-10-24T03:12:03.856+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:03 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.4 KiB, free 413.7 MiB)
+[2025-10-24T03:12:03.865+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:03 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2ef039423968:36147 (size: 6.4 KiB, free: 413.9 MiB)
+[2025-10-24T03:12:03.868+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:03 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+[2025-10-24T03:12:04.150+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2025-10-24T03:12:04.156+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:04 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[2025-10-24T03:12:04.572+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:04 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (2ef039423968, executor driver, partition 0, PROCESS_LOCAL, 8232 bytes)
+[2025-10-24T03:12:04.776+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:04 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+[2025-10-24T03:12:07.158+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:07 INFO CodeGenerator: Code generated in 243.91161 ms
+[2025-10-24T03:12:07.551+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:07 INFO FileScanRDD: Reading File path: file:///opt/***/include/dfTransjakarta180kRows.csv, range: 0-44826159, partition values: [empty row]
+[2025-10-24T03:12:07.785+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:07 INFO CodeGenerator: Code generated in 140.834279 ms
+[2025-10-24T03:12:09.146+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:09 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1829 bytes result sent to driver
+[2025-10-24T03:12:09.851+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:09 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 5491 ms on 2ef039423968 (executor driver) (1/1)
+[2025-10-24T03:12:09.954+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:09 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2025-10-24T03:12:10.074+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:10 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 7.423 s
+[2025-10-24T03:12:10.145+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:10 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2025-10-24T03:12:10.155+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:10 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2025-10-24T03:12:10.157+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:10 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 8.084919 s
+[2025-10-24T03:12:10.560+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:10 INFO CodeGenerator: Code generated in 199.244278 ms
+[2025-10-24T03:12:12.379+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO FileSourceStrategy: Pushed Filters:
+[2025-10-24T03:12:12.443+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO FileSourceStrategy: Post-Scan Filters:
+[2025-10-24T03:12:12.540+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.6 KiB, free 413.5 MiB)
+[2025-10-24T03:12:12.841+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 413.4 MiB)
+[2025-10-24T03:12:12.845+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2ef039423968:36147 (size: 34.2 KiB, free: 413.9 MiB)
+[2025-10-24T03:12:12.854+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO SparkContext: Created broadcast 2 from csv at NativeMethodAccessorImpl.java:0
+[2025-10-24T03:12:12.855+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:12 INFO FileSourceScanExec: Planning scan with bin packing, max size: 49020463 bytes, open cost is considered as scanning 4194304 bytes.
+[2025-10-24T03:12:16.770+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:16 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+[2025-10-24T03:12:16.779+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:16 INFO DAGScheduler: Got job 1 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2025-10-24T03:12:16.782+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:16 INFO DAGScheduler: Final stage: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0)
+[2025-10-24T03:12:17.058+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:16 INFO DAGScheduler: Parents of final stage: List()
+[2025-10-24T03:12:17.094+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:16 INFO DAGScheduler: Missing parents: List()
+[2025-10-24T03:12:17.140+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:17 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2025-10-24T03:12:17.563+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:17 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 27.9 KiB, free 413.4 MiB)
+[2025-10-24T03:12:18.041+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:17 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 12.8 KiB, free 413.4 MiB)
+[2025-10-24T03:12:18.043+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:17 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2ef039423968:36147 (size: 12.8 KiB, free: 413.8 MiB)
+[2025-10-24T03:12:18.058+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:17 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1585
+[2025-10-24T03:12:18.144+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2025-10-24T03:12:18.180+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+[2025-10-24T03:12:18.240+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (2ef039423968, executor driver, partition 0, PROCESS_LOCAL, 8232 bytes)
+[2025-10-24T03:12:18.245+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+[2025-10-24T03:12:18.967+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO CodeGenerator: Code generated in 192.787003 ms
+[2025-10-24T03:12:18.983+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:18 INFO FileScanRDD: Reading File path: file:///opt/***/include/dfTransjakarta180kRows.csv, range: 0-44826159, partition values: [empty row]
+[2025-10-24T03:12:32.636+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1908 bytes result sent to driver
+[2025-10-24T03:12:32.647+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 14466 ms on 2ef039423968 (executor driver) (1/1)
+[2025-10-24T03:12:32.696+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2025-10-24T03:12:32.700+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO DAGScheduler: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0) finished in 15.594 s
+[2025-10-24T03:12:32.702+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[2025-10-24T03:12:32.704+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+[2025-10-24T03:12:32.710+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:32 INFO DAGScheduler: Job 1 finished: csv at NativeMethodAccessorImpl.java:0, took 13.105771 s
+[2025-10-24T03:12:38.786+0000] {spark_submit.py:492} INFO - Traceback (most recent call last):
+[2025-10-24T03:12:38.788+0000] {spark_submit.py:492} INFO - File "/opt/***/include/scripts/load_csv_to_postgres.py", line 76, in <module>
+[2025-10-24T03:12:39.183+0000] {spark_submit.py:492} INFO - main()
+[2025-10-24T03:12:39.185+0000] {spark_submit.py:492} INFO - File "/opt/***/include/scripts/load_csv_to_postgres.py", line 66, in main
+[2025-10-24T03:12:39.188+0000] {spark_submit.py:492} INFO - df.write.jdbc(
+[2025-10-24T03:12:39.191+0000] {spark_submit.py:492} INFO - File "/opt/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 1984, in jdbc
+[2025-10-24T03:12:39.200+0000] {spark_submit.py:492} INFO - File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2025-10-24T03:12:39.207+0000] {spark_submit.py:492} INFO - File "/opt/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+[2025-10-24T03:12:39.209+0000] {spark_submit.py:492} INFO - File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+[2025-10-24T03:12:39.213+0000] {spark_submit.py:492} INFO - py4j.protocol.Py4JJavaError: An error occurred while calling o80.jdbc.
+[2025-10-24T03:12:39.219+0000] {spark_submit.py:492} INFO - : java.lang.ClassNotFoundException: org.postgresql.Driver
+[2025-10-24T03:12:39.221+0000] {spark_submit.py:492} INFO - at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+[2025-10-24T03:12:39.222+0000] {spark_submit.py:492} INFO - at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+[2025-10-24T03:12:39.223+0000] {spark_submit.py:492} INFO - at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+[2025-10-24T03:12:39.224+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.DriverRegistry$.register(DriverRegistry.scala:46)
+[2025-10-24T03:12:39.225+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.$anonfun$driverClass$1(JDBCOptions.scala:103)
+[2025-10-24T03:12:39.262+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.$anonfun$driverClass$1$adapted(JDBCOptions.scala:103)
+[2025-10-24T03:12:39.265+0000] {spark_submit.py:492} INFO - at scala.Option.foreach(Option.scala:407)
+[2025-10-24T03:12:39.304+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:103)
+[2025-10-24T03:12:39.363+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:254)
+[2025-10-24T03:12:39.367+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:258)
+[2025-10-24T03:12:39.375+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:47)
+[2025-10-24T03:12:39.379+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+[2025-10-24T03:12:39.382+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+[2025-10-24T03:12:39.384+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+[2025-10-24T03:12:39.388+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+[2025-10-24T03:12:39.394+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+[2025-10-24T03:12:39.397+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+[2025-10-24T03:12:39.464+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+[2025-10-24T03:12:39.474+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+[2025-10-24T03:12:39.476+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+[2025-10-24T03:12:39.482+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+[2025-10-24T03:12:39.484+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+[2025-10-24T03:12:39.492+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+[2025-10-24T03:12:39.494+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+[2025-10-24T03:12:39.503+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+[2025-10-24T03:12:39.564+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+[2025-10-24T03:12:39.566+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+[2025-10-24T03:12:39.567+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+[2025-10-24T03:12:39.568+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+[2025-10-24T03:12:39.569+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+[2025-10-24T03:12:39.570+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+[2025-10-24T03:12:39.572+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+[2025-10-24T03:12:39.573+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+[2025-10-24T03:12:39.574+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+[2025-10-24T03:12:39.576+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+[2025-10-24T03:12:39.584+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+[2025-10-24T03:12:39.586+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+[2025-10-24T03:12:39.587+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+[2025-10-24T03:12:39.588+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+[2025-10-24T03:12:39.594+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+[2025-10-24T03:12:39.662+0000] {spark_submit.py:492} INFO - at org.apache.spark.sql.DataFrameWriter.jdbc(DataFrameWriter.scala:756)
+[2025-10-24T03:12:39.663+0000] {spark_submit.py:492} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2025-10-24T03:12:39.664+0000] {spark_submit.py:492} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2025-10-24T03:12:39.665+0000] {spark_submit.py:492} INFO - at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2025-10-24T03:12:39.666+0000] {spark_submit.py:492} INFO - at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2025-10-24T03:12:39.666+0000] {spark_submit.py:492} INFO - at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2025-10-24T03:12:39.667+0000] {spark_submit.py:492} INFO - at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-10-24T03:12:39.668+0000] {spark_submit.py:492} INFO - at py4j.Gateway.invoke(Gateway.java:282)
+[2025-10-24T03:12:39.669+0000] {spark_submit.py:492} INFO - at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2025-10-24T03:12:39.669+0000] {spark_submit.py:492} INFO - at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2025-10-24T03:12:39.670+0000] {spark_submit.py:492} INFO - at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2025-10-24T03:12:39.671+0000] {spark_submit.py:492} INFO - at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2025-10-24T03:12:39.671+0000] {spark_submit.py:492} INFO - at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-10-24T03:12:39.672+0000] {spark_submit.py:492} INFO - 
+[2025-10-24T03:12:42.787+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:42 INFO SparkContext: Invoking stop() from shutdown hook
+[2025-10-24T03:12:42.872+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:42 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2025-10-24T03:12:43.683+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:43 INFO SparkUI: Stopped Spark web UI at http://2ef039423968:4040
+[2025-10-24T03:12:44.574+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:44 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2025-10-24T03:12:45.494+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:45 INFO MemoryStore: MemoryStore cleared
+[2025-10-24T03:12:45.500+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:45 INFO BlockManager: BlockManager stopped
+[2025-10-24T03:12:46.387+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2025-10-24T03:12:46.394+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2025-10-24T03:12:46.672+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO SparkContext: Successfully stopped SparkContext
+[2025-10-24T03:12:46.679+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO ShutdownHookManager: Shutdown hook called
+[2025-10-24T03:12:46.680+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-c24f160a-d05c-4711-a788-0bd3569c2733
+[2025-10-24T03:12:46.993+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-1d55137f-4be7-412e-a38f-5163ea8aeded
+[2025-10-24T03:12:47.000+0000] {spark_submit.py:492} INFO - 25/10/24 03:12:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-1d55137f-4be7-412e-a38f-5163ea8aeded/pyspark-53d4f979-c53e-4b47-87c9-4d30dc206933
+[2025-10-24T03:12:49.962+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 423, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master local --name arrow-spark --verbose /opt/***/include/scripts/load_csv_to_postgres.py. Error code is: 1.
+[2025-10-24T03:12:50.100+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=etl_csv_to_postgres, task_id=load_csv_to_postgres, execution_date=20251024T030841, start_date=20251024T030849, end_date=20251024T031250
+[2025-10-24T03:12:52.564+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 184 for task load_csv_to_postgres (Cannot execute: spark-submit --master local --name arrow-spark --verbose /opt/***/include/scripts/load_csv_to_postgres.py. Error code is: 1.; 1470)
+[2025-10-24T03:12:53.093+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-24T03:12:58.048+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
