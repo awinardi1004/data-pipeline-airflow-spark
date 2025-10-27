@@ -29461,3 +29461,2068 @@ File Path                                     PID    Runtime      # DAGs    # Er
 /opt/airflow/dags/test_spark.py                                        1           0  0.71s           2025-10-24T12:52:17
 ================================================================================
 [2025-10-24T12:53:00.661+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T11:28:10.465+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T11:28:10.476+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T11:28:10.477+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T11:28:10.479+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T11:28:12.359+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T11:28:13.392+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     52  0.39s             0           0
+/opt/airflow/dags/my_dag.py                      53  0.26s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T11:28:46.042+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     62  1.20s             1           0  1.56s           2025-10-26T11:28:14
+/opt/airflow/dags/my_dag.py                                            1           0  12.54s          2025-10-26T11:28:25
+/opt/airflow/dags/test_spark.py                  63  0.02s             1           0  1.21s           2025-10-26T11:28:15
+================================================================================
+[2025-10-26T11:29:18.866+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.70s           2025-10-26T11:29:17
+/opt/airflow/dags/my_dag.py                                            1           0  3.93s           2025-10-26T11:29:00
+/opt/airflow/dags/test_spark.py                                        1           0  0.63s           2025-10-26T11:29:17
+================================================================================
+[2025-10-26T11:29:51.273+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.70s           2025-10-26T11:29:49
+/opt/airflow/dags/my_dag.py                                            1           0  8.19s           2025-10-26T11:29:39
+/opt/airflow/dags/test_spark.py                                        1           0  1.59s           2025-10-26T11:29:49
+================================================================================
+[2025-10-26T11:30:24.773+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.57s           2025-10-26T11:30:21
+/opt/airflow/dags/my_dag.py                                            1           0  7.95s           2025-10-26T11:30:19
+/opt/airflow/dags/test_spark.py                                        1           0  1.22s           2025-10-26T11:30:21
+================================================================================
+[2025-10-26T11:30:57.420+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.07s           2025-10-26T11:30:53
+/opt/airflow/dags/my_dag.py                                            1           0  5.81s           2025-10-26T11:30:55
+/opt/airflow/dags/test_spark.py                                        1           0  1.24s           2025-10-26T11:30:55
+================================================================================
+[2025-10-26T11:31:30.299+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.48s           2025-10-26T11:31:25
+/opt/airflow/dags/my_dag.py                                            1           0  3.26s           2025-10-26T11:31:28
+/opt/airflow/dags/test_spark.py                                        1           0  0.93s           2025-10-26T11:31:26
+================================================================================
+[2025-10-26T11:32:03.172+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.92s           2025-10-26T11:31:57
+/opt/airflow/dags/my_dag.py                                            1           0  2.47s           2025-10-26T11:32:01
+/opt/airflow/dags/test_spark.py                                        1           0  0.71s           2025-10-26T11:31:57
+================================================================================
+[2025-10-26T11:32:35.842+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.73s           2025-10-26T11:32:28
+/opt/airflow/dags/my_dag.py                                            1           0  2.84s           2025-10-26T11:32:34
+/opt/airflow/dags/test_spark.py                                        1           0  0.56s           2025-10-26T11:32:28
+================================================================================
+[2025-10-26T11:33:08.863+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.58s           2025-10-26T11:33:00
+/opt/airflow/dags/my_dag.py                     141  3.83s             1           0  2.84s           2025-10-26T11:32:34
+/opt/airflow/dags/test_spark.py                                        1           0  1.89s           2025-10-26T11:33:01
+================================================================================
+[2025-10-26T11:33:10.795+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T11:33:13.527+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T11:33:42.531+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.80s           2025-10-26T11:33:33
+/opt/airflow/dags/my_dag.py                     151  1.12s             1           0  5.77s           2025-10-26T11:33:10
+/opt/airflow/dags/test_spark.py                                        1           0  1.63s           2025-10-26T11:33:33
+================================================================================
+[2025-10-26T11:34:17.248+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.13s           2025-10-26T11:34:06
+/opt/airflow/dags/my_dag.py                                            1           0  6.16s           2025-10-26T11:33:47
+/opt/airflow/dags/test_spark.py                                        1           0  1.63s           2025-10-26T11:34:06
+================================================================================
+[2025-10-26T11:34:48.641+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.20s           2025-10-26T11:34:39
+/opt/airflow/dags/my_dag.py                                            1           0  2.68s           2025-10-26T11:34:20
+/opt/airflow/dags/test_spark.py                                        1           0  1.58s           2025-10-26T11:34:38
+================================================================================
+[2025-10-26T11:35:23.213+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.27s           2025-10-26T11:35:09
+/opt/airflow/dags/my_dag.py                     180  0.02s             1           0  1.15s           2025-10-26T11:34:52
+/opt/airflow/dags/test_spark.py                                        1           0  0.32s           2025-10-26T11:35:09
+================================================================================
+[2025-10-26T11:35:54.802+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.52s           2025-10-26T11:35:40
+/opt/airflow/dags/my_dag.py                     190  0.01s             1           0  1.30s           2025-10-26T11:35:24
+/opt/airflow/dags/test_spark.py                                        1           0  0.45s           2025-10-26T11:35:40
+================================================================================
+[2025-10-26T11:36:27.903+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.41s           2025-10-26T11:36:10
+/opt/airflow/dags/my_dag.py                                            1           0  1.54s           2025-10-26T11:36:27
+/opt/airflow/dags/test_spark.py                                        1           0  0.34s           2025-10-26T11:36:10
+================================================================================
+[2025-10-26T11:37:01.179+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.60s           2025-10-26T11:36:43
+/opt/airflow/dags/my_dag.py                                            1           0  2.37s           2025-10-26T11:37:00
+/opt/airflow/dags/test_spark.py                                        1           0  0.62s           2025-10-26T11:36:43
+================================================================================
+[2025-10-26T11:37:33.655+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.33s           2025-10-26T11:37:15
+/opt/airflow/dags/my_dag.py                                            1           0  1.78s           2025-10-26T11:37:32
+/opt/airflow/dags/test_spark.py                                        1           0  0.27s           2025-10-26T11:37:15
+================================================================================
+[2025-10-26T11:38:07.079+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.71s           2025-10-26T11:37:48
+/opt/airflow/dags/my_dag.py                                            1           0  3.22s           2025-10-26T11:38:06
+/opt/airflow/dags/test_spark.py                                        1           0  0.71s           2025-10-26T11:37:48
+================================================================================
+[2025-10-26T11:38:11.131+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T11:38:11.505+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T11:38:40.456+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.31s           2025-10-26T11:38:20
+/opt/airflow/dags/my_dag.py                                            1           0  1.57s           2025-10-26T11:38:38
+/opt/airflow/dags/test_spark.py                                        1           0  0.36s           2025-10-26T11:38:20
+================================================================================
+[2025-10-26T11:39:13.260+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.51s           2025-10-26T11:38:53
+/opt/airflow/dags/my_dag.py                                            1           0  2.91s           2025-10-26T11:39:12
+/opt/airflow/dags/test_spark.py                                        1           0  0.50s           2025-10-26T11:38:53
+================================================================================
+[2025-10-26T11:39:46.085+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.51s           2025-10-26T11:39:26
+/opt/airflow/dags/my_dag.py                                            1           0  2.12s           2025-10-26T11:39:45
+/opt/airflow/dags/test_spark.py                                        1           0  0.46s           2025-10-26T11:39:26
+================================================================================
+[2025-10-26T11:40:19.267+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.82s           2025-10-26T11:40:00
+/opt/airflow/dags/my_dag.py                     270  3.86s             1           0  2.12s           2025-10-26T11:39:45
+/opt/airflow/dags/test_spark.py                                        1           0  2.47s           2025-10-26T11:40:00
+================================================================================
+[2025-10-26T11:40:51.894+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.11s           2025-10-26T11:40:33
+/opt/airflow/dags/my_dag.py                                            1           0  11.76s          2025-10-26T11:40:27
+/opt/airflow/dags/test_spark.py                                        1           0  2.06s           2025-10-26T11:40:32
+================================================================================
+[2025-10-26T11:41:24.466+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.80s           2025-10-26T11:41:10
+/opt/airflow/dags/my_dag.py                                            1           0  14.19s          2025-10-26T11:41:12
+/opt/airflow/dags/test_spark.py                                        1           0  4.58s           2025-10-26T11:41:08
+================================================================================
+[2025-10-26T11:41:57.694+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.97s           2025-10-26T11:41:41
+/opt/airflow/dags/my_dag.py                                            1           0  5.22s           2025-10-26T11:41:47
+/opt/airflow/dags/test_spark.py                                        1           0  1.13s           2025-10-26T11:41:40
+================================================================================
+[2025-10-26T11:42:31.629+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.80s           2025-10-26T11:42:13
+/opt/airflow/dags/my_dag.py                                            1           0  2.21s           2025-10-26T11:42:20
+/opt/airflow/dags/test_spark.py                                        1           0  1.35s           2025-10-26T11:42:12
+================================================================================
+[2025-10-26T11:43:04.839+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.25s           2025-10-26T11:42:44
+/opt/airflow/dags/my_dag.py                                            1           0  2.21s           2025-10-26T11:42:52
+/opt/airflow/dags/test_spark.py                                        1           0  0.35s           2025-10-26T11:42:43
+================================================================================
+[2025-10-26T11:43:14.026+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T11:43:17.549+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T11:43:38.378+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.10s           2025-10-26T11:43:20
+/opt/airflow/dags/my_dag.py                                            1           0  10.68s          2025-10-26T11:43:36
+/opt/airflow/dags/test_spark.py                                        1           0  1.45s           2025-10-26T11:43:19
+================================================================================
+[2025-10-26T11:44:11.996+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  6.16s           2025-10-26T11:44:00
+/opt/airflow/dags/my_dag.py                     339  3.18s             1           0  10.68s          2025-10-26T11:43:36
+/opt/airflow/dags/test_spark.py                                        1           0  3.59s           2025-10-26T11:43:59
+================================================================================
+[2025-10-26T11:44:45.239+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  6.16s           2025-10-26T11:44:00
+/opt/airflow/dags/my_dag.py                     339  36.43s            1           0  10.68s          2025-10-26T11:43:36
+/opt/airflow/dags/test_spark.py                 341  13.89s            1           0  3.59s           2025-10-26T11:43:59
+================================================================================
+[2025-10-26T11:45:17.947+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                                            0           1  44.21s          2025-10-26T11:44:52
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  7.87s           2025-10-26T11:44:54
+/opt/airflow/dags/test_spark.py                 349  0.62s             1           0  14.66s          2025-10-26T11:44:45
+================================================================================
+[2025-10-26T11:45:33.513+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T11:45:33.509+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T11:56:23.579+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T11:56:23.582+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T11:56:23.583+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T11:56:23.584+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T11:56:23.814+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T11:56:24.895+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     61  0.33s             0           0
+/opt/airflow/dags/my_dag.py                      62  0.24s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T11:57:02.122+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     71  0.48s             0           1  2.30s           2025-10-26T11:56:26
+/opt/airflow/dags/my_dag.py                      70  5.27s             0           1  2.13s           2025-10-26T11:56:26
+/opt/airflow/dags/test_spark.py                                        0           1  0.34s           2025-10-26T11:56:27
+================================================================================
+[2025-10-26T11:57:35.041+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.48s           2025-10-26T11:57:33
+/opt/airflow/dags/my_dag.py                                            0           1  0.32s           2025-10-26T11:57:33
+/opt/airflow/dags/test_spark.py                                        0           1  0.28s           2025-10-26T11:57:33
+================================================================================
+[2025-10-26T11:58:08.914+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     88  4.31s             0           1  0.48s           2025-10-26T11:57:33
+/opt/airflow/dags/my_dag.py                      89  2.43s             0           1  0.32s           2025-10-26T11:57:33
+/opt/airflow/dags/test_spark.py                                        0           1  0.28s           2025-10-26T11:57:33
+================================================================================
+[2025-10-26T11:58:42.710+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     98  1.75s             0           1  5.51s           2025-10-26T11:58:10
+/opt/airflow/dags/my_dag.py                      99  0.58s             0           1  3.87s           2025-10-26T11:58:10
+/opt/airflow/dags/test_spark.py                                        0           1  0.65s           2025-10-26T11:58:11
+================================================================================
+[2025-10-26T11:59:16.113+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  6.31s           2025-10-26T11:58:47
+/opt/airflow/dags/my_dag.py                                            0           1  5.32s           2025-10-26T11:58:47
+/opt/airflow/dags/test_spark.py                                        0           1  2.63s           2025-10-26T11:58:49
+================================================================================
+[2025-10-26T11:59:48.797+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  5.74s           2025-10-26T11:59:23
+/opt/airflow/dags/my_dag.py                                            0           1  3.77s           2025-10-26T11:59:24
+/opt/airflow/dags/test_spark.py                                        0           1  2.23s           2025-10-26T11:59:25
+================================================================================
+[2025-10-26T12:00:21.802+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.38s           2025-10-26T11:59:57
+/opt/airflow/dags/my_dag.py                                            0           1  4.81s           2025-10-26T12:00:00
+/opt/airflow/dags/test_spark.py                                        0           1  5.49s           2025-10-26T12:00:03
+================================================================================
+[2025-10-26T12:00:54.910+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.93s           2025-10-26T12:00:28
+/opt/airflow/dags/my_dag.py                                            0           1  5.06s           2025-10-26T12:00:37
+/opt/airflow/dags/test_spark.py                                        0           1  2.64s           2025-10-26T12:00:38
+================================================================================
+[2025-10-26T12:01:23.858+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:01:25.233+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:01:28.125+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.85s           2025-10-26T12:01:04
+/opt/airflow/dags/my_dag.py                                            0           1  11.01s          2025-10-26T12:01:19
+/opt/airflow/dags/test_spark.py                                        0           1  7.26s           2025-10-26T12:01:19
+================================================================================
+[2025-10-26T12:02:00.974+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  9.93s           2025-10-26T12:01:45
+/opt/airflow/dags/my_dag.py                                            0           1  9.45s           2025-10-26T12:01:59
+/opt/airflow/dags/test_spark.py                                        0           1  7.25s           2025-10-26T12:01:58
+================================================================================
+[2025-10-26T12:02:37.033+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  7.59s           2025-10-26T12:02:23
+/opt/airflow/dags/my_dag.py                     187  6.35s             0           1  9.45s           2025-10-26T12:01:59
+/opt/airflow/dags/test_spark.py                 188  4.45s             0           1  7.25s           2025-10-26T12:01:58
+================================================================================
+[2025-10-26T12:03:15.067+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  7.63s           2025-10-26T12:03:01
+/opt/airflow/dags/my_dag.py                                            0           1  13.22s          2025-10-26T12:02:43
+/opt/airflow/dags/test_spark.py                                        0           1  11.60s          2025-10-26T12:02:43
+================================================================================
+[2025-10-26T12:03:49.156+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    205  14.96s            0           1  7.63s           2025-10-26T12:03:01
+/opt/airflow/dags/my_dag.py                                            0           1  9.06s           2025-10-26T12:03:24
+/opt/airflow/dags/test_spark.py                                        0           1  8.11s           2025-10-26T12:03:24
+================================================================================
+[2025-10-26T12:04:24.520+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    214  4.08s             0           1  15.49s          2025-10-26T12:03:49
+/opt/airflow/dags/my_dag.py                                            0           1  18.89s          2025-10-26T12:04:14
+/opt/airflow/dags/test_spark.py                                        0           1  14.66s          2025-10-26T12:04:14
+================================================================================
+[2025-10-26T12:04:57.183+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  6.25s           2025-10-26T12:04:26
+/opt/airflow/dags/my_dag.py                     215  11.91s            0           1  18.89s          2025-10-26T12:04:14
+/opt/airflow/dags/test_spark.py                 222  10.45s            0           1  14.66s          2025-10-26T12:04:14
+================================================================================
+[2025-10-26T12:05:30.065+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.72s           2025-10-26T12:05:05
+/opt/airflow/dags/my_dag.py                                            0           1  17.26s          2025-10-26T12:05:02
+/opt/airflow/dags/test_spark.py                                        0           1  16.64s          2025-10-26T12:05:03
+================================================================================
+[2025-10-26T12:06:03.332+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.65s           2025-10-26T12:05:41
+/opt/airflow/dags/my_dag.py                                            0           1  8.38s           2025-10-26T12:05:41
+/opt/airflow/dags/test_spark.py                                        0           1  3.71s           2025-10-26T12:05:45
+================================================================================
+[2025-10-26T12:06:24.014+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:06:24.794+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:06:36.398+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.08s           2025-10-26T12:06:16
+/opt/airflow/dags/my_dag.py                                            0           1  3.25s           2025-10-26T12:06:17
+/opt/airflow/dags/test_spark.py                                        0           1  1.76s           2025-10-26T12:06:18
+================================================================================
+[2025-10-26T12:07:09.914+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  5.83s           2025-10-26T12:06:53
+/opt/airflow/dags/my_dag.py                                            0           1  4.69s           2025-10-26T12:06:53
+/opt/airflow/dags/test_spark.py                                        0           1  2.41s           2025-10-26T12:06:55
+================================================================================
+[2025-10-26T12:07:42.550+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  8.95s           2025-10-26T12:07:33
+/opt/airflow/dags/my_dag.py                                            0           1  8.44s           2025-10-26T12:07:33
+/opt/airflow/dags/test_spark.py                                        0           1  2.35s           2025-10-26T12:07:35
+================================================================================
+[2025-10-26T12:08:15.913+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  3.45s           2025-10-26T12:08:07
+/opt/airflow/dags/my_dag.py                                            0           1  3.35s           2025-10-26T12:08:07
+/opt/airflow/dags/test_spark.py                                        0           1  1.21s           2025-10-26T12:08:08
+================================================================================
+[2025-10-26T12:08:49.113+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.40s           2025-10-26T12:08:39
+/opt/airflow/dags/my_dag.py                                            0           1  3.48s           2025-10-26T12:08:41
+/opt/airflow/dags/test_spark.py                                        0           1  1.95s           2025-10-26T12:08:41
+================================================================================
+[2025-10-26T12:09:21.753+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  3.29s           2025-10-26T12:09:13
+/opt/airflow/dags/my_dag.py                                            0           1  1.75s           2025-10-26T12:09:13
+/opt/airflow/dags/test_spark.py                                        0           1  1.62s           2025-10-26T12:09:14
+================================================================================
+[2025-10-26T12:09:55.134+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.84s           2025-10-26T12:09:45
+/opt/airflow/dags/my_dag.py                                            0           1  2.21s           2025-10-26T12:09:45
+/opt/airflow/dags/test_spark.py                                        0           1  0.89s           2025-10-26T12:09:46
+================================================================================
+[2025-10-26T12:10:28.178+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  7.71s           2025-10-26T12:10:23
+/opt/airflow/dags/my_dag.py                                            0           1  7.19s           2025-10-26T12:10:25
+/opt/airflow/dags/test_spark.py                                        0           1  2.03s           2025-10-26T12:10:25
+================================================================================
+[2025-10-26T12:11:19.590+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    316  4.52s             0           1  7.71s           2025-10-26T12:10:23
+/opt/airflow/dags/my_dag.py                     317  4.36s             0           1  7.19s           2025-10-26T12:10:25
+/opt/airflow/dags/test_spark.py                                        0           1  2.03s           2025-10-26T12:10:25
+================================================================================
+[2025-10-26T12:11:24.126+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:11:24.894+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:11:52.343+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    325  0.36s             0           1  25.01s          2025-10-26T12:11:21
+/opt/airflow/dags/my_dag.py                     326  0.08s             0           1  24.98s          2025-10-26T12:11:21
+/opt/airflow/dags/test_spark.py                                        0           1  1.32s           2025-10-26T12:11:23
+================================================================================
+[2025-10-26T12:12:25.053+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  12.79s          2025-10-26T12:12:04
+/opt/airflow/dags/my_dag.py                                            0           1  12.64s          2025-10-26T12:12:04
+/opt/airflow/dags/test_spark.py                                        0           1  1.78s           2025-10-26T12:12:06
+================================================================================
+[2025-10-26T12:12:58.220+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  8.31s           2025-10-26T12:12:44
+/opt/airflow/dags/my_dag.py                                            0           1  5.22s           2025-10-26T12:12:44
+/opt/airflow/dags/test_spark.py                                        0           1  3.12s           2025-10-26T12:12:48
+================================================================================
+[2025-10-26T12:13:32.577+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    350  16.46s            0           1  8.31s           2025-10-26T12:12:44
+/opt/airflow/dags/my_dag.py                     351  15.65s            0           1  5.22s           2025-10-26T12:12:44
+/opt/airflow/dags/test_spark.py                                        0           1  3.12s           2025-10-26T12:12:48
+================================================================================
+[2025-10-26T12:14:05.453+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  26.42s          2025-10-26T12:13:41
+/opt/airflow/dags/my_dag.py                                            0           1  25.98s          2025-10-26T12:13:41
+/opt/airflow/dags/test_spark.py                                        0           1  4.80s           2025-10-26T12:13:46
+================================================================================
+[2025-10-26T12:14:38.510+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  24.15s          2025-10-26T12:14:36
+/opt/airflow/dags/my_dag.py                                            0           1  23.68s          2025-10-26T12:14:37
+/opt/airflow/dags/test_spark.py                 367  1.47s             0           1  4.80s           2025-10-26T12:13:46
+================================================================================
+[2025-10-26T12:15:11.349+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    368  3.99s             0           1  24.15s          2025-10-26T12:14:36
+/opt/airflow/dags/my_dag.py                     376  0.37s             0           1  23.68s          2025-10-26T12:14:37
+/opt/airflow/dags/test_spark.py                                        0           1  4.75s           2025-10-26T12:14:41
+================================================================================
+[2025-10-26T12:15:44.698+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    378  0.68s             0           1  5.71s           2025-10-26T12:15:12
+/opt/airflow/dags/my_dag.py                     379  0.05s             0           1  2.90s           2025-10-26T12:15:13
+/opt/airflow/dags/test_spark.py                                        0           1  4.83s           2025-10-26T12:15:18
+================================================================================
+[2025-10-26T12:16:18.466+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  24.72s          2025-10-26T12:16:08
+/opt/airflow/dags/my_dag.py                                            0           1  24.83s          2025-10-26T12:16:09
+/opt/airflow/dags/test_spark.py                                        0           1  1.78s           2025-10-26T12:16:11
+================================================================================
+[2025-10-26T12:16:24.766+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:16:26.256+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:16:50.916+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  5.07s           2025-10-26T12:16:43
+/opt/airflow/dags/my_dag.py                                            0           1  3.72s           2025-10-26T12:16:43
+/opt/airflow/dags/test_spark.py                                        0           1  1.58s           2025-10-26T12:16:45
+================================================================================
+[2025-10-26T12:17:24.364+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    397  10.29s            0           1  5.07s           2025-10-26T12:16:43
+/opt/airflow/dags/my_dag.py                     396  10.40s            0           1  3.72s           2025-10-26T12:16:43
+/opt/airflow/dags/test_spark.py                                        0           1  1.58s           2025-10-26T12:16:45
+================================================================================
+[2025-10-26T12:17:57.400+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  16.34s          2025-10-26T12:17:30
+/opt/airflow/dags/my_dag.py                                            0           1  16.56s          2025-10-26T12:17:30
+/opt/airflow/dags/test_spark.py                                        0           1  0.73s           2025-10-26T12:17:31
+================================================================================
+[2025-10-26T12:18:30.992+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    411  21.28s            0           1  16.34s          2025-10-26T12:17:30
+/opt/airflow/dags/my_dag.py                     412  12.34s            0           1  16.56s          2025-10-26T12:17:30
+/opt/airflow/dags/test_spark.py                                        0           1  0.73s           2025-10-26T12:17:31
+================================================================================
+[2025-10-26T12:19:02.859+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/dag_csv_to_postgres_dag.py with PID 411 started at 2025-10-26T12:18:09.029160+00:00 has timed out, killing it.
+[2025-10-26T12:19:06.162+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  53.83s          2025-10-26T12:19:02
+/opt/airflow/dags/my_dag.py                     412  48.19s            0           1  16.56s          2025-10-26T12:17:30
+/opt/airflow/dags/test_spark.py                 419  3.12s             0           1  0.73s           2025-10-26T12:17:31
+================================================================================
+[2025-10-26T12:19:08.549+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/my_dag.py with PID 412 started at 2025-10-26T12:18:17.966164+00:00 has timed out, killing it.
+[2025-10-26T12:19:40.644+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    426  1.57s             0           1  53.83s          2025-10-26T12:19:02
+/opt/airflow/dags/my_dag.py                                            0           1  50.58s          2025-10-26T12:19:08
+/opt/airflow/dags/test_spark.py                                        0           1  16.96s          2025-10-26T12:19:19
+================================================================================
+[2025-10-26T12:20:15.133+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  10.96s          2025-10-26T12:19:47
+/opt/airflow/dags/my_dag.py                     427  32.35s            0           1  50.58s          2025-10-26T12:19:08
+/opt/airflow/dags/test_spark.py                 428  24.48s            0           1  16.96s          2025-10-26T12:19:19
+================================================================================
+[2025-10-26T12:20:48.515+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.20s           2025-10-26T12:20:23
+/opt/airflow/dags/my_dag.py                                            0           1  40.24s          2025-10-26T12:20:22
+/opt/airflow/dags/test_spark.py                                        0           1  29.84s          2025-10-26T12:20:20
+================================================================================
+[2025-10-26T12:21:21.742+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  13.00s          2025-10-26T12:21:07
+/opt/airflow/dags/my_dag.py                     445  21.70s            0           1  40.24s          2025-10-26T12:20:22
+/opt/airflow/dags/test_spark.py                                        0           1  3.79s           2025-10-26T12:20:54
+================================================================================
+[2025-10-26T12:21:25.003+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:21:26.605+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:21:54.737+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.09s           2025-10-26T12:21:41
+/opt/airflow/dags/my_dag.py                                            0           1  34.11s          2025-10-26T12:21:34
+/opt/airflow/dags/test_spark.py                                        0           1  6.60s           2025-10-26T12:21:37
+================================================================================
+[2025-10-26T12:22:28.955+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.09s           2025-10-26T12:21:41
+/opt/airflow/dags/my_dag.py                     454  22.56s            0           1  34.11s          2025-10-26T12:21:34
+/opt/airflow/dags/test_spark.py                 455  12.97s            0           1  6.60s           2025-10-26T12:21:37
+================================================================================
+[2025-10-26T12:23:19.078+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/my_dag.py with PID 454 started at 2025-10-26T12:22:04.870996+00:00 has timed out, killing it.
+[2025-10-26T12:23:19.928+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/test_spark.py with PID 455 started at 2025-10-26T12:22:14.466632+00:00 has timed out, killing it.
+[2025-10-26T12:23:21.148+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    468  0.13s             0           1  4.09s           2025-10-26T12:21:41
+/opt/airflow/dags/my_dag.py                                            0           1  74.21s          2025-10-26T12:23:19
+/opt/airflow/dags/test_spark.py                                        0           1  64.61s          2025-10-26T12:23:19
+================================================================================
+[2025-10-26T12:24:23.363+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.40s           2025-10-26T12:23:25
+/opt/airflow/dags/my_dag.py                     475  2.81s             0           1  74.21s          2025-10-26T12:23:19
+/opt/airflow/dags/test_spark.py                 476  1.04s             0           1  64.61s          2025-10-26T12:23:19
+================================================================================
+[2025-10-26T12:24:57.134+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    483  0.10s             0           1  4.40s           2025-10-26T12:23:25
+/opt/airflow/dags/my_dag.py                                            0           1  38.88s          2025-10-26T12:24:56
+/opt/airflow/dags/test_spark.py                 476  37.35s            0           1  64.61s          2025-10-26T12:23:19
+================================================================================
+[2025-10-26T12:25:09.766+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/test_spark.py with PID 476 started at 2025-10-26T12:24:19.636224+00:00 has timed out, killing it.
+[2025-10-26T12:25:41.458+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    483  42.08s            0           1  4.40s           2025-10-26T12:23:25
+/opt/airflow/dags/my_dag.py                     491  1.18s             0           1  38.88s          2025-10-26T12:24:56
+/opt/airflow/dags/test_spark.py                                        0           1  50.13s          2025-10-26T12:25:09
+================================================================================
+[2025-10-26T12:25:47.691+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/dag_csv_to_postgres_dag.py with PID 483 started at 2025-10-26T12:24:56.877353+00:00 has timed out, killing it.
+[2025-10-26T12:26:14.816+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  50.81s          2025-10-26T12:25:47
+/opt/airflow/dags/my_dag.py                     491  37.04s            0           1  38.88s          2025-10-26T12:24:56
+/opt/airflow/dags/test_spark.py                 492  26.73s            0           1  50.13s          2025-10-26T12:25:09
+================================================================================
+[2025-10-26T12:26:25.283+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:26:27.233+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:26:28.110+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/my_dag.py with PID 491 started at 2025-10-26T12:25:37.778725+00:00 has timed out, killing it.
+[2025-10-26T12:26:47.511+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                                            0           1  50.33s          2025-10-26T12:26:28
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  4.71s           2025-10-26T12:26:33
+/opt/airflow/dags/test_spark.py                                        1           0  43.60s          2025-10-26T12:26:31
+================================================================================
+[2025-10-26T12:27:20.925+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     505  10.91s            0           1  50.33s          2025-10-26T12:26:28
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.29s           2025-10-26T12:27:16
+/opt/airflow/dags/test_spark.py                 507  4.23s             1           0  43.60s          2025-10-26T12:26:31
+================================================================================
+[2025-10-26T12:27:58.952+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     505  49.47s            0           1  50.33s          2025-10-26T12:26:28
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.29s           2025-10-26T12:27:16
+/opt/airflow/dags/test_spark.py                 507  42.79s            1           0  43.60s          2025-10-26T12:26:31
+================================================================================
+[2025-10-26T12:27:59.807+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/my_dag.py with PID 505 started at 2025-10-26T12:27:09.478666+00:00 has timed out, killing it.
+[2025-10-26T12:28:31.919+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     516  0.18s             0           1  50.33s          2025-10-26T12:27:59
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.88s           2025-10-26T12:28:04
+/opt/airflow/dags/test_spark.py                                        1           0  46.04s          2025-10-26T12:28:02
+================================================================================
+[2025-10-26T12:29:05.537+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     516  33.79s            0           1  50.33s          2025-10-26T12:27:59
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.70s           2025-10-26T12:28:37
+/opt/airflow/dags/test_spark.py                 526  0.02s             1           0  1.84s           2025-10-26T12:28:34
+================================================================================
+[2025-10-26T12:29:21.897+0000] {manager.py:1201} ERROR - Processor for /opt/airflow/dags/my_dag.py with PID 516 started at 2025-10-26T12:28:31.729458+00:00 has timed out, killing it.
+[2025-10-26T12:29:39.643+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                                            0           1  50.17s          2025-10-26T12:29:21
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    535  0.60s             1           0  0.60s           2025-10-26T12:29:08
+/opt/airflow/dags/test_spark.py                 534  1.94s             1           0  0.83s           2025-10-26T12:29:06
+================================================================================
+[2025-10-26T12:29:49.660+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T12:43:08.400+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T12:43:08.403+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T12:43:08.409+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T12:43:08.411+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:43:08.966+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:43:09.490+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     42  0.23s             0           0
+/opt/airflow/dags/my_dag.py                      43  0.15s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T12:43:42.777+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.49s           2025-10-26T12:43:40
+/opt/airflow/dags/my_dag.py                                            0           1  0.61s           2025-10-26T12:43:40
+/opt/airflow/dags/test_spark.py                                        0           1  0.27s           2025-10-26T12:43:40
+================================================================================
+[2025-10-26T12:44:15.992+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.25s           2025-10-26T12:44:15
+/opt/airflow/dags/my_dag.py                      61  2.99s             0           1  0.61s           2025-10-26T12:43:40
+/opt/airflow/dags/test_spark.py                  62  0.44s             0           1  0.27s           2025-10-26T12:43:40
+================================================================================
+[2025-10-26T12:44:49.206+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.79s           2025-10-26T12:44:49
+/opt/airflow/dags/my_dag.py                      70  1.14s             0           1  3.48s           2025-10-26T12:44:16
+/opt/airflow/dags/test_spark.py                  71  0.09s             0           1  2.42s           2025-10-26T12:44:17
+================================================================================
+[2025-10-26T12:45:22.514+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.03s           2025-10-26T12:45:20
+/opt/airflow/dags/my_dag.py                                            0           1  1.43s           2025-10-26T12:45:21
+/opt/airflow/dags/test_spark.py                                        0           1  0.85s           2025-10-26T12:45:21
+================================================================================
+[2025-10-26T12:45:55.293+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.36s           2025-10-26T12:45:51
+/opt/airflow/dags/my_dag.py                                            0           1  0.77s           2025-10-26T12:45:53
+/opt/airflow/dags/test_spark.py                                        0           1  0.58s           2025-10-26T12:45:53
+================================================================================
+[2025-10-26T12:46:27.983+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.84s           2025-10-26T12:46:24
+/opt/airflow/dags/my_dag.py                                            0           1  3.28s           2025-10-26T12:46:26
+/opt/airflow/dags/test_spark.py                                        0           1  1.91s           2025-10-26T12:46:27
+================================================================================
+[2025-10-26T12:47:05.459+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     98  10.15s            0           1  2.84s           2025-10-26T12:46:24
+/opt/airflow/dags/my_dag.py                      99  5.49s             0           1  3.28s           2025-10-26T12:46:26
+/opt/airflow/dags/test_spark.py                                        0           1  1.91s           2025-10-26T12:46:27
+================================================================================
+[2025-10-26T12:47:37.817+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  15.33s          2025-10-26T12:47:10
+/opt/airflow/dags/my_dag.py                                            0           1  10.95s          2025-10-26T12:47:10
+/opt/airflow/dags/test_spark.py                                        0           1  1.97s           2025-10-26T12:47:12
+================================================================================
+[2025-10-26T12:47:38.335+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T12:50:20.532+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T12:50:20.534+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T12:50:20.535+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T12:50:20.536+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:50:23.561+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:50:24.976+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     41  0.66s             0           0
+/opt/airflow/dags/my_dag.py                      42  0.34s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T12:50:57.957+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.50s           2025-10-26T12:50:57
+/opt/airflow/dags/my_dag.py                                            0           1  0.45s           2025-10-26T12:50:56
+/opt/airflow/dags/test_spark.py                                        0           1  1.78s           2025-10-26T12:50:28
+================================================================================
+[2025-10-26T12:51:30.664+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.26s           2025-10-26T12:51:28
+/opt/airflow/dags/my_dag.py                                            0           1  0.37s           2025-10-26T12:51:28
+/opt/airflow/dags/test_spark.py                                        0           1  0.37s           2025-10-26T12:51:29
+================================================================================
+[2025-10-26T12:52:03.468+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.17s           2025-10-26T12:51:58
+/opt/airflow/dags/my_dag.py                                            0           1  0.20s           2025-10-26T12:51:58
+/opt/airflow/dags/test_spark.py                                        0           1  0.49s           2025-10-26T12:52:00
+================================================================================
+[2025-10-26T12:52:36.228+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.18s           2025-10-26T12:52:29
+/opt/airflow/dags/my_dag.py                                            0           1  0.27s           2025-10-26T12:52:29
+/opt/airflow/dags/test_spark.py                                        0           1  0.45s           2025-10-26T12:52:31
+================================================================================
+[2025-10-26T12:53:09.270+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.16s           2025-10-26T12:53:00
+/opt/airflow/dags/my_dag.py                                            0           1  0.17s           2025-10-26T12:53:00
+/opt/airflow/dags/test_spark.py                                        0           1  0.25s           2025-10-26T12:53:02
+================================================================================
+[2025-10-26T12:53:42.164+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.22s           2025-10-26T12:53:30
+/opt/airflow/dags/my_dag.py                                            0           1  0.21s           2025-10-26T12:53:30
+/opt/airflow/dags/test_spark.py                                        0           1  0.37s           2025-10-26T12:53:33
+================================================================================
+[2025-10-26T12:54:15.658+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.60s           2025-10-26T12:54:01
+/opt/airflow/dags/my_dag.py                                            0           1  0.37s           2025-10-26T12:54:01
+/opt/airflow/dags/test_spark.py                                        0           1  0.23s           2025-10-26T12:54:03
+================================================================================
+[2025-10-26T12:54:48.248+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.15s           2025-10-26T12:54:31
+/opt/airflow/dags/my_dag.py                                            0           1  0.27s           2025-10-26T12:54:31
+/opt/airflow/dags/test_spark.py                                        0           1  0.34s           2025-10-26T12:54:34
+================================================================================
+[2025-10-26T12:55:20.802+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T12:55:21.070+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T12:55:21.090+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.67s           2025-10-26T12:55:03
+/opt/airflow/dags/my_dag.py                                            0           1  0.74s           2025-10-26T12:55:03
+/opt/airflow/dags/test_spark.py                                        0           1  0.31s           2025-10-26T12:55:04
+================================================================================
+[2025-10-26T12:55:54.555+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.27s           2025-10-26T12:55:34
+/opt/airflow/dags/my_dag.py                                            0           1  0.31s           2025-10-26T12:55:34
+/opt/airflow/dags/test_spark.py                                        0           1  0.26s           2025-10-26T12:55:35
+================================================================================
+[2025-10-26T12:56:27.726+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.67s           2025-10-26T12:56:06
+/opt/airflow/dags/my_dag.py                                            0           1  1.59s           2025-10-26T12:56:06
+/opt/airflow/dags/test_spark.py                                        0           1  0.71s           2025-10-26T12:56:07
+================================================================================
+[2025-10-26T12:57:00.468+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.21s           2025-10-26T12:56:39
+/opt/airflow/dags/my_dag.py                                            0           1  2.11s           2025-10-26T12:56:39
+/opt/airflow/dags/test_spark.py                                        0           1  1.44s           2025-10-26T12:56:40
+================================================================================
+[2025-10-26T12:57:33.054+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.07s           2025-10-26T12:57:11
+/opt/airflow/dags/my_dag.py                                            0           1  2.39s           2025-10-26T12:57:11
+/opt/airflow/dags/test_spark.py                                        0           1  4.00s           2025-10-26T12:57:15
+================================================================================
+[2025-10-26T12:58:07.634+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.29s           2025-10-26T12:57:42
+/opt/airflow/dags/my_dag.py                                            0           1  1.03s           2025-10-26T12:57:43
+/opt/airflow/dags/test_spark.py                                        0           1  1.27s           2025-10-26T12:57:47
+================================================================================
+[2025-10-26T12:58:39.185+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.59s           2025-10-26T12:58:18
+/opt/airflow/dags/my_dag.py                                            0           1  3.40s           2025-10-26T12:58:17
+/opt/airflow/dags/test_spark.py                                        0           1  2.28s           2025-10-26T12:58:20
+================================================================================
+[2025-10-26T12:59:12.174+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.33s           2025-10-26T12:58:51
+/opt/airflow/dags/my_dag.py                                            0           1  2.90s           2025-10-26T12:58:51
+/opt/airflow/dags/test_spark.py                                        0           1  3.97s           2025-10-26T12:58:55
+================================================================================
+[2025-10-26T12:59:45.123+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  2.15s           2025-10-26T12:59:24
+/opt/airflow/dags/my_dag.py                                            0           1  2.30s           2025-10-26T12:59:23
+/opt/airflow/dags/test_spark.py                                        0           1  3.19s           2025-10-26T12:59:29
+================================================================================
+[2025-10-26T13:00:18.988+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.08s           2025-10-26T12:59:56
+/opt/airflow/dags/my_dag.py                                            0           1  1.93s           2025-10-26T12:59:55
+/opt/airflow/dags/test_spark.py                                        0           1  1.57s           2025-10-26T13:00:02
+================================================================================
+[2025-10-26T13:00:20.824+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:00:23.902+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:00:52.066+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  0.55s           2025-10-26T13:00:27
+/opt/airflow/dags/my_dag.py                                            0           1  0.60s           2025-10-26T13:00:26
+/opt/airflow/dags/test_spark.py                                        0           1  1.10s           2025-10-26T13:00:33
+================================================================================
+[2025-10-26T13:01:24.985+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  4.65s           2025-10-26T13:01:05
+/opt/airflow/dags/my_dag.py                                            0           1  3.57s           2025-10-26T13:01:05
+/opt/airflow/dags/test_spark.py                                        0           1  4.62s           2025-10-26T13:01:10
+================================================================================
+[2025-10-26T13:01:57.737+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    256  21.97s            0           1  4.65s           2025-10-26T13:01:05
+/opt/airflow/dags/my_dag.py                     257  21.77s            0           1  3.57s           2025-10-26T13:01:05
+/opt/airflow/dags/test_spark.py                                        0           1  4.62s           2025-10-26T13:01:10
+================================================================================
+[2025-10-26T13:02:30.710+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  32.50s          2025-10-26T13:02:08
+/opt/airflow/dags/my_dag.py                                            0           1  32.33s          2025-10-26T13:02:08
+/opt/airflow/dags/test_spark.py                                        0           1  0.79s           2025-10-26T13:02:08
+================================================================================
+[2025-10-26T13:03:04.185+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  1.28s           2025-10-26T13:02:40
+/opt/airflow/dags/my_dag.py                                            0           1  1.03s           2025-10-26T13:02:40
+/opt/airflow/dags/test_spark.py                                        0           1  0.37s           2025-10-26T13:02:40
+================================================================================
+[2025-10-26T13:03:37.187+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  3.01s           2025-10-26T13:03:13
+/opt/airflow/dags/my_dag.py                                            0           1  2.50s           2025-10-26T13:03:13
+/opt/airflow/dags/test_spark.py                                        0           1  1.27s           2025-10-26T13:03:15
+================================================================================
+[2025-10-26T13:04:10.144+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0           1  23.92s          2025-10-26T13:04:09
+/opt/airflow/dags/my_dag.py                     284  24.52s            0           1  2.50s           2025-10-26T13:03:13
+/opt/airflow/dags/test_spark.py                 285  0.77s             0           1  1.27s           2025-10-26T13:03:15
+================================================================================
+[2025-10-26T13:04:43.993+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    291  1.06s             0           1  23.92s          2025-10-26T13:04:09
+/opt/airflow/dags/my_dag.py                                            0           1  37.34s          2025-10-26T13:04:22
+/opt/airflow/dags/test_spark.py                                        0           1  7.79s           2025-10-26T13:04:17
+================================================================================
+[2025-10-26T13:05:16.647+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     293  22.59s            0           1  37.34s          2025-10-26T13:04:22
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  9.57s           2025-10-26T13:04:52
+/opt/airflow/dags/test_spark.py                                        1           0  2.33s           2025-10-26T13:04:52
+================================================================================
+[2025-10-26T13:05:22.486+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:05:22.944+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:05:49.420+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                                            0           1  33.30s          2025-10-26T13:05:27
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.03s           2025-10-26T13:05:24
+/opt/airflow/dags/test_spark.py                                        1           0  0.53s           2025-10-26T13:05:24
+================================================================================
+[2025-10-26T13:06:22.611+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                     309  25.12s            0           1  33.30s          2025-10-26T13:05:27
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  2.37s           2025-10-26T13:05:57
+/opt/airflow/dags/test_spark.py                                        1           0  2.31s           2025-10-26T13:05:57
+================================================================================
+[2025-10-26T13:06:56.970+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.40s           2025-10-26T13:06:28
+/opt/airflow/dags/my_dag.py                     326  0.05s             1           0  27.85s          2025-10-26T13:06:25
+/opt/airflow/dags/test_spark.py                                        1           0  0.44s           2025-10-26T13:06:28
+================================================================================
+[2025-10-26T13:07:29.748+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  6.24s           2025-10-26T13:07:07
+/opt/airflow/dags/my_dag.py                                            1           0  15.27s          2025-10-26T13:07:12
+/opt/airflow/dags/test_spark.py                                        1           0  4.41s           2025-10-26T13:07:11
+================================================================================
+[2025-10-26T13:08:02.485+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.30s           2025-10-26T13:07:37
+/opt/airflow/dags/my_dag.py                                            1           0  1.31s           2025-10-26T13:07:44
+/opt/airflow/dags/test_spark.py                                        1           0  0.25s           2025-10-26T13:07:42
+================================================================================
+[2025-10-26T13:08:35.704+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.44s           2025-10-26T13:08:08
+/opt/airflow/dags/my_dag.py                                            1           0  1.13s           2025-10-26T13:08:15
+/opt/airflow/dags/test_spark.py                                        1           0  0.25s           2025-10-26T13:08:12
+================================================================================
+[2025-10-26T13:09:11.635+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    366  0.01s             1           0  0.37s           2025-10-26T13:08:39
+/opt/airflow/dags/my_dag.py                                            1           0  2.02s           2025-10-26T13:08:47
+/opt/airflow/dags/test_spark.py                                        1           0  0.17s           2025-10-26T13:08:42
+================================================================================
+[2025-10-26T13:09:44.705+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py    376  0.62s             1           0  0.49s           2025-10-26T13:09:12
+/opt/airflow/dags/my_dag.py                                            1           0  1.55s           2025-10-26T13:09:19
+/opt/airflow/dags/test_spark.py                 377  0.60s             1           0  0.26s           2025-10-26T13:09:13
+================================================================================
+[2025-10-26T13:10:17.474+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.42s           2025-10-26T13:10:17
+/opt/airflow/dags/my_dag.py                                            1           0  1.39s           2025-10-26T13:09:51
+/opt/airflow/dags/test_spark.py                                        1           0  0.38s           2025-10-26T13:10:17
+================================================================================
+[2025-10-26T13:10:22.568+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:10:22.760+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:10:50.449+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.29s           2025-10-26T13:10:49
+/opt/airflow/dags/my_dag.py                                            1           0  1.40s           2025-10-26T13:10:22
+/opt/airflow/dags/test_spark.py                                        1           0  0.23s           2025-10-26T13:10:49
+================================================================================
+[2025-10-26T13:11:23.578+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.42s           2025-10-26T13:11:23
+/opt/airflow/dags/my_dag.py                                            1           0  1.35s           2025-10-26T13:10:54
+/opt/airflow/dags/test_spark.py                                        1           0  1.23s           2025-10-26T13:11:23
+================================================================================
+[2025-10-26T13:11:57.016+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.32s           2025-10-26T13:11:54
+/opt/airflow/dags/my_dag.py                                            1           0  3.30s           2025-10-26T13:11:28
+/opt/airflow/dags/test_spark.py                                        1           0  0.35s           2025-10-26T13:11:55
+================================================================================
+[2025-10-26T13:12:29.980+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.41s           2025-10-26T13:12:27
+/opt/airflow/dags/my_dag.py                                            1           0  4.35s           2025-10-26T13:12:03
+/opt/airflow/dags/test_spark.py                                        1           0  0.38s           2025-10-26T13:12:27
+================================================================================
+[2025-10-26T13:13:03.357+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.31s           2025-10-26T13:13:00
+/opt/airflow/dags/my_dag.py                                            1           0  0.98s           2025-10-26T13:12:35
+/opt/airflow/dags/test_spark.py                                        1           0  0.34s           2025-10-26T13:13:00
+================================================================================
+[2025-10-26T13:13:36.124+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.27s           2025-10-26T13:13:33
+/opt/airflow/dags/my_dag.py                                            1           0  1.15s           2025-10-26T13:13:06
+/opt/airflow/dags/test_spark.py                                        1           0  0.29s           2025-10-26T13:13:33
+================================================================================
+[2025-10-26T13:14:08.816+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.48s           2025-10-26T13:14:05
+/opt/airflow/dags/my_dag.py                     457  0.01s             1           0  1.24s           2025-10-26T13:13:38
+/opt/airflow/dags/test_spark.py                                        1           0  0.41s           2025-10-26T13:14:05
+================================================================================
+[2025-10-26T13:14:41.744+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.83s           2025-10-26T13:14:38
+/opt/airflow/dags/my_dag.py                                            1           0  1.32s           2025-10-26T13:14:41
+/opt/airflow/dags/test_spark.py                                        1           0  1.35s           2025-10-26T13:14:39
+================================================================================
+[2025-10-26T13:15:14.953+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.78s           2025-10-26T13:15:11
+/opt/airflow/dags/my_dag.py                                            1           0  1.04s           2025-10-26T13:15:12
+/opt/airflow/dags/test_spark.py                                        1           0  0.40s           2025-10-26T13:15:10
+================================================================================
+[2025-10-26T13:15:23.293+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:15:23.781+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:15:47.835+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.62s           2025-10-26T13:15:44
+/opt/airflow/dags/my_dag.py                                            1           0  1.54s           2025-10-26T13:15:45
+/opt/airflow/dags/test_spark.py                                        1           0  0.33s           2025-10-26T13:15:44
+================================================================================
+[2025-10-26T13:16:20.651+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.42s           2025-10-26T13:16:16
+/opt/airflow/dags/my_dag.py                     496  4.85s             1           0  1.54s           2025-10-26T13:15:45
+/opt/airflow/dags/test_spark.py                                        1           0  0.32s           2025-10-26T13:16:16
+================================================================================
+[2025-10-26T13:16:45.372+0000] {manager.py:1017} ERROR - Processor for /opt/airflow/dags/my_dag.py exited with return code 1.
+[2025-10-26T13:16:46.970+0000] {manager.py:1017} ERROR - Processor for /opt/airflow/dags/dag_csv_to_postgres_dag.py exited with return code 1.
+[2025-10-26T13:16:47.170+0000] {manager.py:1017} ERROR - Processor for /opt/airflow/dags/test_spark.py exited with return code 1.
+[2025-10-26T13:16:54.049+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           0          -1  0.47s           2025-10-26T13:16:46
+/opt/airflow/dags/my_dag.py                                            0          -1  29.57s          2025-10-26T13:16:45
+/opt/airflow/dags/test_spark.py                                        0          -1  0.15s           2025-10-26T13:16:47
+================================================================================
+[2025-10-26T13:40:02.373+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T13:40:02.390+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T13:40:02.418+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T13:40:02.435+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:40:03.597+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:40:04.821+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     42  0.33s             0           0
+/opt/airflow/dags/my_dag.py                      43  0.27s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T13:40:33.877+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-26T13:42:18.628+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-26T13:42:18.655+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-26T13:42:18.659+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-26T13:42:18.667+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:42:19.971+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:42:27.496+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     48  4.57s             0           0
+/opt/airflow/dags/my_dag.py                      49  3.62s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-26T13:42:58.279+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  8.07s           2025-10-26T13:42:29
+/opt/airflow/dags/my_dag.py                                            1           0  17.40s          2025-10-26T13:42:40
+/opt/airflow/dags/test_spark.py                                        1           0  4.24s           2025-10-26T13:42:34
+================================================================================
+[2025-10-26T13:43:28.285+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.52s           2025-10-26T13:43:01
+/opt/airflow/dags/my_dag.py                                            1           0  5.20s           2025-10-26T13:43:15
+/opt/airflow/dags/test_spark.py                                        1           0  2.91s           2025-10-26T13:43:07
+================================================================================
+[2025-10-26T13:43:59.336+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.52s           2025-10-26T13:43:32
+/opt/airflow/dags/my_dag.py                                            1           0  7.38s           2025-10-26T13:43:53
+/opt/airflow/dags/test_spark.py                                        1           0  0.89s           2025-10-26T13:43:38
+================================================================================
+[2025-10-26T13:44:29.376+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.46s           2025-10-26T13:44:02
+/opt/airflow/dags/my_dag.py                      86  4.52s             1           0  7.38s           2025-10-26T13:43:53
+/opt/airflow/dags/test_spark.py                                        1           0  0.60s           2025-10-26T13:44:08
+================================================================================
+[2025-10-26T13:45:00.151+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.99s           2025-10-26T13:44:34
+/opt/airflow/dags/my_dag.py                      96  0.04s             1           0  4.95s           2025-10-26T13:44:29
+/opt/airflow/dags/test_spark.py                                        1           0  1.58s           2025-10-26T13:44:40
+================================================================================
+[2025-10-26T13:45:30.176+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.94s           2025-10-26T13:45:06
+/opt/airflow/dags/my_dag.py                                            1           0  3.99s           2025-10-26T13:45:04
+/opt/airflow/dags/test_spark.py                                        1           0  0.64s           2025-10-26T13:45:11
+================================================================================
+[2025-10-26T13:46:00.264+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.76s           2025-10-26T13:45:37
+/opt/airflow/dags/my_dag.py                                            1           0  3.08s           2025-10-26T13:45:37
+/opt/airflow/dags/test_spark.py                                        1           0  0.54s           2025-10-26T13:45:42
+================================================================================
+[2025-10-26T13:46:30.343+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.59s           2025-10-26T13:46:08
+/opt/airflow/dags/my_dag.py                                            1           0  2.62s           2025-10-26T13:46:10
+/opt/airflow/dags/test_spark.py                                        1           0  1.20s           2025-10-26T13:46:14
+================================================================================
+[2025-10-26T13:47:00.349+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.31s           2025-10-26T13:46:39
+/opt/airflow/dags/my_dag.py                                            1           0  2.80s           2025-10-26T13:46:43
+/opt/airflow/dags/test_spark.py                                        1           0  0.47s           2025-10-26T13:46:44
+================================================================================
+[2025-10-26T13:47:19.098+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:47:19.284+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:47:30.630+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.50s           2025-10-26T13:47:10
+/opt/airflow/dags/my_dag.py                                            1           0  2.25s           2025-10-26T13:47:16
+/opt/airflow/dags/test_spark.py                                        1           0  0.53s           2025-10-26T13:47:15
+================================================================================
+[2025-10-26T13:48:00.831+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.40s           2025-10-26T13:47:40
+/opt/airflow/dags/my_dag.py                                            1           0  2.73s           2025-10-26T13:47:49
+/opt/airflow/dags/test_spark.py                                        1           0  0.24s           2025-10-26T13:47:46
+================================================================================
+[2025-10-26T13:48:31.058+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.29s           2025-10-26T13:48:11
+/opt/airflow/dags/my_dag.py                                            1           0  6.79s           2025-10-26T13:48:27
+/opt/airflow/dags/test_spark.py                                        1           0  0.45s           2025-10-26T13:48:17
+================================================================================
+[2025-10-26T13:49:01.218+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.43s           2025-10-26T13:48:42
+/opt/airflow/dags/my_dag.py                                            1           0  3.26s           2025-10-26T13:49:00
+/opt/airflow/dags/test_spark.py                                        1           0  0.52s           2025-10-26T13:48:47
+================================================================================
+[2025-10-26T13:49:31.536+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.46s           2025-10-26T13:49:14
+/opt/airflow/dags/my_dag.py                     182  0.93s             1           0  3.26s           2025-10-26T13:49:00
+/opt/airflow/dags/test_spark.py                                        1           0  0.32s           2025-10-26T13:49:18
+================================================================================
+[2025-10-26T13:50:01.573+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.44s           2025-10-26T13:49:44
+/opt/airflow/dags/my_dag.py                                            1           0  1.33s           2025-10-26T13:49:31
+/opt/airflow/dags/test_spark.py                                        1           0  0.37s           2025-10-26T13:49:49
+================================================================================
+[2025-10-26T13:50:32.386+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.35s           2025-10-26T13:50:14
+/opt/airflow/dags/my_dag.py                                            1           0  2.50s           2025-10-26T13:50:04
+/opt/airflow/dags/test_spark.py                                        1           0  0.21s           2025-10-26T13:50:19
+================================================================================
+[2025-10-26T13:51:02.571+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.40s           2025-10-26T13:50:46
+/opt/airflow/dags/my_dag.py                                            1           0  1.33s           2025-10-26T13:50:36
+/opt/airflow/dags/test_spark.py                                        1           0  0.44s           2025-10-26T13:50:50
+================================================================================
+[2025-10-26T13:51:33.122+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.29s           2025-10-26T13:51:16
+/opt/airflow/dags/my_dag.py                                            1           0  1.56s           2025-10-26T13:51:08
+/opt/airflow/dags/test_spark.py                                        1           0  0.31s           2025-10-26T13:51:21
+================================================================================
+[2025-10-26T13:52:02.904+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.24s           2025-10-26T13:51:48
+/opt/airflow/dags/my_dag.py                                            1           0  1.18s           2025-10-26T13:51:40
+/opt/airflow/dags/test_spark.py                                        1           0  0.25s           2025-10-26T13:51:52
+================================================================================
+[2025-10-26T13:52:19.428+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-26T13:52:19.601+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-26T13:52:33.357+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.24s           2025-10-26T13:52:18
+/opt/airflow/dags/my_dag.py                                            1           0  1.28s           2025-10-26T13:52:12
+/opt/airflow/dags/test_spark.py                                        1           0  0.56s           2025-10-26T13:52:23
+================================================================================
+[2025-10-26T13:53:03.468+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.35s           2025-10-26T13:52:49
+/opt/airflow/dags/my_dag.py                                            1           0  1.11s           2025-10-26T13:52:43
+/opt/airflow/dags/test_spark.py                                        1           0  0.64s           2025-10-26T13:52:54
+================================================================================
+[2025-10-26T13:53:34.082+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.37s           2025-10-26T13:53:20
+/opt/airflow/dags/my_dag.py                                            1           0  1.26s           2025-10-26T13:53:14
+/opt/airflow/dags/test_spark.py                                        1           0  0.22s           2025-10-26T13:53:25
+================================================================================
+[2025-10-26T13:54:04.636+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.30s           2025-10-26T13:53:50
+/opt/airflow/dags/my_dag.py                                            1           0  1.96s           2025-10-26T13:53:47
+/opt/airflow/dags/test_spark.py                                        1           0  0.22s           2025-10-26T13:53:55
+================================================================================
+[2025-10-26T13:54:35.182+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.30s           2025-10-26T13:54:22
+/opt/airflow/dags/my_dag.py                                            1           0  4.19s           2025-10-26T13:54:22
+/opt/airflow/dags/test_spark.py                                        1           0  1.12s           2025-10-26T13:54:28
+================================================================================
+[2025-10-26T13:55:05.090+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  4.19s           2025-10-26T13:54:57
+/opt/airflow/dags/my_dag.py                                            1           0  6.53s           2025-10-26T13:54:59
+/opt/airflow/dags/test_spark.py                                        1           0  1.51s           2025-10-26T13:55:00
+================================================================================
+[2025-10-26T13:55:35.181+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.34s           2025-10-26T13:55:28
+/opt/airflow/dags/my_dag.py                                            1           0  1.48s           2025-10-26T13:55:31
+/opt/airflow/dags/test_spark.py                                        1           0  0.26s           2025-10-26T13:55:31
+================================================================================
+[2025-10-26T13:55:56.758+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-10-27T01:35:56.005+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-27T01:36:03.358+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-27T01:36:03.546+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-27T01:36:03.612+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-27T01:36:21.632+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-27T01:36:29.486+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     59  4.04s             0           0
+/opt/airflow/dags/my_dag.py                      60  0.85s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-27T01:37:00.926+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                      60  32.35s            0           0
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  13.72s          2025-10-27T01:36:39
+/opt/airflow/dags/test_spark.py                                        1           0  9.94s           2025-10-27T01:36:50
+================================================================================
+[2025-10-27T01:37:32.413+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/my_dag.py                                            0           1  40.84s          2025-10-27T01:37:09
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  7.23s           2025-10-27T01:37:17
+/opt/airflow/dags/test_spark.py                                        1           0  3.79s           2025-10-27T01:37:25
+================================================================================
+[2025-10-27T01:38:04.429+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.89s           2025-10-27T01:37:51
+/opt/airflow/dags/my_dag.py                                            1           0  23.06s          2025-10-27T01:38:03
+/opt/airflow/dags/test_spark.py                                        1           0  2.03s           2025-10-27T01:37:57
+================================================================================
+[2025-10-27T01:38:36.262+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.49s           2025-10-27T01:38:23
+/opt/airflow/dags/my_dag.py                      95  2.84s             1           0  23.06s          2025-10-27T01:38:03
+/opt/airflow/dags/test_spark.py                                        1           0  2.04s           2025-10-27T01:38:31
+================================================================================
+[2025-10-27T01:39:07.971+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.81s           2025-10-27T01:38:56
+/opt/airflow/dags/my_dag.py                                            1           0  6.98s           2025-10-27T01:38:40
+/opt/airflow/dags/test_spark.py                                        1           0  1.34s           2025-10-27T01:39:02
+================================================================================
+[2025-10-27T01:39:39.664+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.38s           2025-10-27T01:39:27
+/opt/airflow/dags/my_dag.py                                            1           0  7.80s           2025-10-27T01:39:19
+/opt/airflow/dags/test_spark.py                                        1           0  2.15s           2025-10-27T01:39:35
+================================================================================
+[2025-10-27T01:40:11.405+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.14s           2025-10-27T01:39:59
+/opt/airflow/dags/my_dag.py                                            1           0  6.83s           2025-10-27T01:39:56
+/opt/airflow/dags/test_spark.py                                        1           0  1.15s           2025-10-27T01:40:06
+================================================================================
+[2025-10-27T01:40:43.026+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.58s           2025-10-27T01:40:31
+/opt/airflow/dags/my_dag.py                                            1           0  5.01s           2025-10-27T01:40:32
+/opt/airflow/dags/test_spark.py                                        1           0  0.96s           2025-10-27T01:40:38
+================================================================================
+[2025-10-27T01:41:03.895+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-27T01:41:05.305+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-27T01:41:14.989+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.88s           2025-10-27T01:41:02
+/opt/airflow/dags/my_dag.py                                            1           0  4.22s           2025-10-27T01:41:07
+/opt/airflow/dags/test_spark.py                                        1           0  0.64s           2025-10-27T01:41:09
+================================================================================
+[2025-10-27T01:41:46.311+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.12s           2025-10-27T01:41:34
+/opt/airflow/dags/my_dag.py                                            1           0  6.16s           2025-10-27T01:41:44
+/opt/airflow/dags/test_spark.py                                        1           0  2.13s           2025-10-27T01:41:42
+================================================================================
+[2025-10-27T01:42:18.103+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.94s           2025-10-27T01:42:05
+/opt/airflow/dags/my_dag.py                                            1           0  3.30s           2025-10-27T01:42:18
+/opt/airflow/dags/test_spark.py                                        1           0  0.90s           2025-10-27T01:42:13
+================================================================================
+[2025-10-27T01:42:49.794+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.13s           2025-10-27T01:42:37
+/opt/airflow/dags/my_dag.py                     171  1.11s             1           0  3.30s           2025-10-27T01:42:18
+/opt/airflow/dags/test_spark.py                                        1           0  0.56s           2025-10-27T01:42:45
+================================================================================
+[2025-10-27T01:43:23.606+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.80s           2025-10-27T01:43:08
+/opt/airflow/dags/my_dag.py                     181  0.02s             1           0  4.52s           2025-10-27T01:42:53
+/opt/airflow/dags/test_spark.py                                        1           0  0.55s           2025-10-27T01:43:16
+================================================================================
+[2025-10-27T01:43:55.975+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  0.79s           2025-10-27T01:43:39
+/opt/airflow/dags/my_dag.py                                            1           0  4.70s           2025-10-27T01:43:28
+/opt/airflow/dags/test_spark.py                                        1           0  2.29s           2025-10-27T01:43:48
+================================================================================
+[2025-10-27T01:44:28.196+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  8.06s           2025-10-27T01:44:18
+/opt/airflow/dags/my_dag.py                                            1           0  19.77s          2025-10-27T01:44:18
+/opt/airflow/dags/test_spark.py                                        1           0  1.30s           2025-10-27T01:44:20
+================================================================================
+[2025-10-27T01:44:59.890+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  4.10s           2025-10-27T01:44:52
+/opt/airflow/dags/my_dag.py                     203  10.57s            1           0  19.77s          2025-10-27T01:44:18
+/opt/airflow/dags/test_spark.py                                        1           0  5.81s           2025-10-27T01:44:58
+================================================================================
+[2025-10-27T01:45:32.266+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  3.03s           2025-10-27T01:45:26
+/opt/airflow/dags/my_dag.py                                            1           0  18.40s          2025-10-27T01:45:07
+/opt/airflow/dags/test_spark.py                 218  2.84s             1           0  5.81s           2025-10-27T01:44:58
+================================================================================
+[2025-10-27T01:46:03.752+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.16s           2025-10-27T01:45:57
+/opt/airflow/dags/my_dag.py                                            1           0  16.32s          2025-10-27T01:45:54
+/opt/airflow/dags/test_spark.py                                        1           0  4.86s           2025-10-27T01:45:34
+================================================================================
+[2025-10-27T01:46:04.656+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-27T01:46:05.276+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-27T01:46:36.205+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py                           1           0  1.22s           2025-10-27T01:46:29
+/opt/airflow/dags/my_dag.py                                            1           0  4.79s           2025-10-27T01:46:29
+/opt/airflow/dags/test_spark.py                                        1           0  1.02s           2025-10-27T01:46:06
+================================================================================
+[2025-10-27T01:53:55.119+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-10-27T01:53:55.121+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-10-27T01:53:55.121+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-27T01:53:55.122+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-10-27T01:53:55.625+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-27T01:53:56.605+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_csv_to_postgres_dag.py     41  0.36s             0           0
+/opt/airflow/dags/my_dag.py                      42  0.29s             0           0
+/opt/airflow/dags/test_spark.py                                        0           0
+================================================================================
+[2025-10-27T01:54:18.972+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
