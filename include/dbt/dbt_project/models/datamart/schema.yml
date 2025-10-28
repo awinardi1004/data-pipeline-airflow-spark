@@ -1,0 +1,43 @@
+version: 2
+
+
+sources:
+  - name: staging
+    schema: staging       
+    database: TransJak       
+    tables:
+      - name: stg_transactions
+
+models:
+  - name: dim_corridor
+    description: "Dimension table containing unique corridor IDs and names"
+    columns:
+      - name: corridor_id
+        description: "Unique identifier for corridor"
+        tests:
+          - unique
+          - not_null
+      - name: corridor_name
+        description: "Name of the corridor"
+  
+  - name: dim_card_holder
+    description: "Dimension table containing passenger demographic details derived from transactions."
+    columns:
+      - name: payment_card_id
+        description: "Unique identifier for the passenger (derived from payCardID)."
+        tests:
+          - not_null
+          - unique
+      - name: card_bank
+        description: "Bank that issued the passenger's card."
+      - name: card_name
+        description: "Name of the passenger as registered on the payment card."
+      - name: gender
+        description: "Passenger gender from payCardSex."
+      - name: birth_year
+        description: "Birth year of the passenger derived from integer payCardBirthDate."
+      - name: age
+        description: "Calculated age based on current year and birth year."
+      - name: age_group
+        description: "Categorized age group of the passenger."
+
