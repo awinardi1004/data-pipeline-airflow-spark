@@ -1,3 +1,9 @@
+{{ config(
+    materialized='table',
+    post_hook="ALTER TABLE {{ this }} ADD PRIMARY KEY (payment_card_id)"
+) }}
+
+
 WITH source AS (
     SELECT
         "payCardID",

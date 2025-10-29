@@ -40,4 +40,107 @@ models:
         description: "Calculated age based on current year and birth year."
       - name: age_group
         description: "Categorized age group of the passenger."
+  
+  - name: dim_date
+    description: "Dimension table containing unique time identifiers for date and time analysis."
+    columns:
+      - name: time_id
+        description: "Unique time key formatted as YYYYMMDDHH24MI"
+        tests:
+          - unique
+          - not_null
+      - name: full_datetime
+        description: "Complete timestamp of the transaction"
+      - name: date
+        description: "Date (without time) of the transaction"
+      - name: year
+        description: "Year of the transaction"
+      - name: month
+        description: "Month of the transaction"
+      - name: day
+        description: "Day of the transaction"
+      - name: day_of_week
+        description: "Day of the week of the transaction"
+      - name: hour
+        description: "Hour of the transaction"
+      - name: period
+        description: "Period of the day: Morning, Afternoon, Evening, Night"
+  
+  - name: dim_stop
+    description: "Dimension table containing unique bus stop IDs, names, and coordinates"
+    columns:
+      - name: stop_id
+        description: "Unique identifier for each bus stop"
+        tests:
+          - unique
+          - not_null
+      - name: stop_name
+        description: "Name of the bus stop"
+      - name: stop_lat
+        description: "Latitude coordinate of the bus stop"
+      - name: stop_lon
+        description: "Longitude coordinate of the bus stop"
+
+  - name: fact_transactions
+    description: "Fact table containing all passenger trip transactions"
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for each transaction"
+        tests:
+          - unique
+          - not_null
+      - name: passenger_id
+        description: "Foreign key to dim_passenger"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_card_holder')
+                field: payment_card_id
+      - name: corridor_id
+        description: "Foreign key to dim_corridor"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_corridor')
+                field: corridor_id
+      - name: tap_in_stop_id
+        description: "Foreign key to dim_stop for boarding stop"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_stop')
+                field: stop_id
+      - name: tap_out_stop_id
+        description: "Foreign key to dim_stop for alighting stop"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_stop')
+                field: stop_id
+      - name: time_id_in
+        description: "Foreign key to dim_time (boarding time)"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_time')
+                field: time_id
+      - name: time_id_out
+        description: "Foreign key to dim_time (alighting time)"
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_time')
+                field: time_id
+      - name: direction
+        description: "Travel direction"
+      - name: stop_start_seq
+        description: "Start stop sequence number"
+      - name: stop_end_seq
+        description: "End stop sequence number"
+      - name: duration_minutes
+        description: "Trip duration in minutes"
+      - name: distance_km
+        description: "Trip distance in kilometers"
+      - name: pay_amount
+        description: "Payment amount for the trip"
 

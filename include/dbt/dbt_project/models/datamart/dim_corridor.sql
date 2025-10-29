@@ -1,3 +1,8 @@
+{{ config(
+    materialized='table',
+    post_hook="ALTER TABLE {{ this }} ADD PRIMARY KEY (corridor_id)"
+) }}
+
 with source_data as (
 
     select
@@ -29,7 +34,6 @@ with_nulls as (
 
 select
     coalesce(f.corridor_id, n.corridor_id) as corridor_id,
-    coalesce(f.corridor_name, 'Unknown Corridor') as corridor_name,
-    current_timestamp as created_at
+    coalesce(f.corridor_name, 'Unknown Corridor') as corridor_name
 from filled_name f
 full outer join with_nulls n on f.corridor_id = n.corridor_id
