@@ -1,0 +1,49 @@
+[2025-10-30T09:16:57.346+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-30T09:16:31.508201+00:00 [queued]>
+[2025-10-30T09:16:57.369+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-30T09:16:31.508201+00:00 [queued]>
+[2025-10-30T09:16:57.370+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-10-30T09:16:57.404+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-30 09:16:31.508201+00:00
+[2025-10-30T09:16:57.415+0000] {standard_task_runner.py:60} INFO - Started process 122 to run task
+[2025-10-30T09:16:57.429+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_dbt_pipeline', 'dbt_run', 'manual__2025-10-30T09:16:31.508201+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmp0fcpsxv4']
+[2025-10-30T09:16:57.440+0000] {standard_task_runner.py:88} INFO - Job 316: Subtask dbt_run
+[2025-10-30T09:16:57.783+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-30T09:16:31.508201+00:00 [running]> on host 257bb6028ed5
+[2025-10-30T09:16:58.029+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dag_dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-30T09:16:31.508201+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-30T09:16:31.508201+00:00'
+[2025-10-30T09:16:58.036+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-30T09:16:58.040+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-30T09:16:58.080+0000] {subprocess.py:86} INFO - Output:
+[2025-10-30T09:17:11.406+0000] {subprocess.py:93} INFO - [0m09:17:11  Running with dbt=1.9.0-b2
+[2025-10-30T09:17:13.634+0000] {subprocess.py:93} INFO - [0m09:17:13  Registered adapter: postgres=1.8.2
+[2025-10-30T09:17:17.995+0000] {subprocess.py:93} INFO - [0m09:17:17  Found 5 models, 14 data tests, 1 source, 423 macros
+[2025-10-30T09:17:18.043+0000] {subprocess.py:93} INFO - [0m09:17:18
+[2025-10-30T09:17:18.065+0000] {subprocess.py:93} INFO - [0m09:17:18  Concurrency: 1 threads (target='dev')
+[2025-10-30T09:17:18.066+0000] {subprocess.py:93} INFO - [0m09:17:18
+[2025-10-30T09:17:18.911+0000] {subprocess.py:93} INFO - [0m09:17:18  1 of 5 START sql table model datamart.dim_card_holder .......................... [RUN]
+[2025-10-30T09:17:25.941+0000] {subprocess.py:93} INFO - [0m09:17:25  1 of 5 OK created sql table model datamart.dim_card_holder ..................... [[32mSELECT 10000[0m in 7.02s]
+[2025-10-30T09:17:25.984+0000] {subprocess.py:93} INFO - [0m09:17:25  2 of 5 START sql table model datamart.dim_corridor ............................. [RUN]
+[2025-10-30T09:17:30.646+0000] {subprocess.py:93} INFO - [0m09:17:30  2 of 5 OK created sql table model datamart.dim_corridor ........................ [[32mSELECT 221[0m in 4.65s]
+[2025-10-30T09:17:30.694+0000] {subprocess.py:93} INFO - [0m09:17:30  3 of 5 START sql table model datamart.dim_stop ................................. [RUN]
+[2025-10-30T09:17:32.887+0000] {subprocess.py:93} INFO - [0m09:17:32  3 of 5 OK created sql table model datamart.dim_stop ............................ [[32mSELECT 5851[0m in 2.15s]
+[2025-10-30T09:17:32.899+0000] {subprocess.py:93} INFO - [0m09:17:32  4 of 5 START sql table model datamart.dim_time ................................. [RUN]
+[2025-10-30T09:17:38.343+0000] {subprocess.py:93} INFO - [0m09:17:38  4 of 5 OK created sql table model datamart.dim_time ............................ [[32mSELECT 27836[0m in 5.43s]
+[2025-10-30T09:17:38.354+0000] {subprocess.py:93} INFO - [0m09:17:38  5 of 5 START sql incremental model datamart.fact_transactions .................. [RUN]
+[2025-10-30T09:47:45.853+0000] {local_task_job_runner.py:211} ERROR - Heartbeat time limit exceeded!
+[2025-10-30T09:47:48.824+0000] {process_utils.py:131} INFO - Sending 15 to group 122. PIDs of all processes in the group: [123, 124, 126, 122]
+[2025-10-30T09:47:50.683+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 122
+[2025-10-30T09:47:50.938+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-10-30T09:47:51.067+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-10-30T09:47:51.986+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=126, status='terminated', started='09:17:10') (126) terminated with exit code None
+[2025-10-30T09:47:52.019+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=124, status='terminated', started='09:16:58') (124) terminated with exit code None
+[2025-10-30T09:47:54.845+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 203, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-10-30T09:47:55.086+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_dbt_pipeline, task_id=dbt_run, execution_date=20251030T091631, start_date=20251030T091657, end_date=20251030T094755
+[2025-10-30T09:47:56.537+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 316 for task dbt_run (Task received SIGTERM signal; 122)
+[2025-10-30T09:47:56.864+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=122, status='terminated', exitcode=1, started='09:16:57') (122) terminated with exit code 1
+[2025-10-30T09:47:57.042+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=123, status='terminated', started='09:16:57') (123) terminated with exit code None

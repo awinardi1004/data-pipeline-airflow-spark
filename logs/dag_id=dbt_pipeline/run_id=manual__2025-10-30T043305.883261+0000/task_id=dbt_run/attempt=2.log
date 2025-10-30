@@ -1,0 +1,30 @@
+[2025-10-30T04:40:44.037+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_run manual__2025-10-30T04:33:05.883261+00:00 [queued]>
+[2025-10-30T04:40:44.050+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_pipeline.dbt_run manual__2025-10-30T04:33:05.883261+00:00 [queued]>
+[2025-10-30T04:40:44.051+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-10-30T04:40:44.074+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-30 04:33:05.883261+00:00
+[2025-10-30T04:40:44.083+0000] {standard_task_runner.py:60} INFO - Started process 221 to run task
+[2025-10-30T04:40:44.090+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_pipeline', 'dbt_run', 'manual__2025-10-30T04:33:05.883261+00:00', '--job-id', '298', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmp7c9cazq0']
+[2025-10-30T04:40:44.093+0000] {standard_task_runner.py:88} INFO - Job 298: Subtask dbt_run
+[2025-10-30T04:40:44.197+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_pipeline.dbt_run manual__2025-10-30T04:33:05.883261+00:00 [running]> on host 257bb6028ed5
+[2025-10-30T04:40:44.467+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-30T04:33:05.883261+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-30T04:33:05.883261+00:00'
+[2025-10-30T04:40:44.475+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-30T04:40:44.489+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-30T04:40:44.571+0000] {subprocess.py:86} INFO - Output:
+[2025-10-30T04:40:48.916+0000] {subprocess.py:93} INFO - [0m04:40:48  Running with dbt=1.9.0-b2
+[2025-10-30T04:40:49.657+0000] {subprocess.py:93} INFO - [0m04:40:49  Registered adapter: postgres=1.8.2
+[2025-10-30T04:40:51.316+0000] {subprocess.py:93} INFO - [0m04:40:51  Found 5 models, 14 data tests, 1 source, 423 macros
+[2025-10-30T04:40:51.338+0000] {subprocess.py:93} INFO - [0m04:40:51
+[2025-10-30T04:40:51.340+0000] {subprocess.py:93} INFO - [0m04:40:51  Concurrency: 1 threads (target='dev')
+[2025-10-30T04:40:51.345+0000] {subprocess.py:93} INFO - [0m04:40:51
+[2025-10-30T04:40:51.674+0000] {subprocess.py:93} INFO - [0m04:40:51  1 of 5 START sql table model datamart.dim_card_holder .......................... [RUN]
+[2025-10-30T04:40:52.638+0000] {subprocess.py:93} INFO - [0m04:40:52  1 of 5 OK created sql table model datamart.dim_card_holder ..................... [[32mSELECT 10000[0m in 0.95s]
+[2025-10-30T04:40:52.644+0000] {subprocess.py:93} INFO - [0m04:40:52  2 of 5 START sql table model datamart.dim_corridor ............................. [RUN]
+[2025-10-30T04:50:23.833+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-10-30T04:50:23.866+0000] {process_utils.py:131} INFO - Sending 15 to group 221. PIDs of all processes in the group: [222, 223, 225, 221]
+[2025-10-30T04:50:23.884+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 221
+[2025-10-30T04:50:23.888+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-10-30T04:50:23.890+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-10-30T04:50:24.184+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=221, status='terminated', exitcode=0, started='04:40:43') (221) terminated with exit code 0
+[2025-10-30T04:50:24.231+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=222, status='terminated', started='04:40:43') (222) terminated with exit code None
+[2025-10-30T04:50:24.237+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=225, status='terminated', started='04:40:48') (225) terminated with exit code None
+[2025-10-30T04:50:24.265+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=223, status='terminated', started='04:40:43') (223) terminated with exit code None

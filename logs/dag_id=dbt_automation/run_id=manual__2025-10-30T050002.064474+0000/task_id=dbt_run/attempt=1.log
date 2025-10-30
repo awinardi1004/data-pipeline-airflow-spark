@@ -1,0 +1,61 @@
+[2025-10-30T05:00:10.950+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [queued]>
+[2025-10-30T05:00:11.037+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [queued]>
+[2025-10-30T05:00:11.047+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-10-30T05:00:11.205+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-30 05:00:02.064474+00:00
+[2025-10-30T05:00:11.231+0000] {standard_task_runner.py:60} INFO - Started process 112 to run task
+[2025-10-30T05:00:11.267+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_automation', 'dbt_run', 'manual__2025-10-30T05:00:02.064474+00:00', '--job-id', '303', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmpndw8fyel']
+[2025-10-30T05:00:11.276+0000] {standard_task_runner.py:88} INFO - Job 303: Subtask dbt_run
+[2025-10-30T05:00:17.983+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [running]> on host 257bb6028ed5
+[2025-10-30T05:00:36.051+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dbt_automation' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-30T05:00:02.064474+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-30T05:00:02.064474+00:00'
+[2025-10-30T05:00:36.186+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-30T05:00:36.288+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-30T05:00:36.754+0000] {subprocess.py:86} INFO - Output:
+[2025-10-30T05:01:54.039+0000] {subprocess.py:93} INFO - [0m05:01:53  Running with dbt=1.9.0-b2
+[2025-10-30T05:02:06.026+0000] {subprocess.py:93} INFO - [0m05:02:06  Registered adapter: postgres=1.8.2
+[2025-10-30T05:02:18.066+0000] {subprocess.py:93} INFO - [0m05:02:18  Found 5 models, 14 data tests, 1 source, 423 macros
+[2025-10-30T05:02:18.077+0000] {subprocess.py:93} INFO - [0m05:02:18
+[2025-10-30T05:02:18.080+0000] {subprocess.py:93} INFO - [0m05:02:18  Concurrency: 1 threads (target='dev')
+[2025-10-30T05:02:18.082+0000] {subprocess.py:93} INFO - [0m05:02:18
+[2025-10-30T05:02:21.700+0000] {subprocess.py:93} INFO - [0m05:02:21  1 of 5 START sql table model datamart.dim_card_holder .......................... [RUN]
+[2025-10-30T05:02:32.217+0000] {subprocess.py:93} INFO - [0m05:02:32  1 of 5 ERROR creating sql table model datamart.dim_card_holder ................. [[31mERROR[0m in 10.51s]
+[2025-10-30T05:02:32.224+0000] {subprocess.py:93} INFO - [0m05:02:32  2 of 5 START sql table model datamart.dim_corridor ............................. [RUN]
+[2025-10-30T05:02:36.536+0000] {subprocess.py:93} INFO - [0m05:02:36  2 of 5 ERROR creating sql table model datamart.dim_corridor .................... [[31mERROR[0m in 4.30s]
+[2025-10-30T05:02:36.582+0000] {subprocess.py:93} INFO - [0m05:02:36  3 of 5 START sql table model datamart.dim_stop ................................. [RUN]
+[2025-10-30T05:02:38.494+0000] {subprocess.py:93} INFO - [0m05:02:38  3 of 5 ERROR creating sql table model datamart.dim_stop ........................ [[31mERROR[0m in 1.90s]
+[2025-10-30T05:02:38.508+0000] {subprocess.py:93} INFO - [0m05:02:38  4 of 5 START sql table model datamart.dim_time ................................. [RUN]
+[2025-10-30T05:02:43.818+0000] {subprocess.py:93} INFO - [0m05:02:43  4 of 5 ERROR creating sql table model datamart.dim_time ........................ [[31mERROR[0m in 5.30s]
+[2025-10-30T05:02:43.878+0000] {subprocess.py:93} INFO - [0m05:02:43  5 of 5 SKIP relation datamart.fact_transactions ................................ [[33mSKIP[0m]
+[2025-10-30T05:02:43.978+0000] {subprocess.py:93} INFO - [0m05:02:43
+[2025-10-30T05:02:43.979+0000] {subprocess.py:93} INFO - [0m05:02:43  Finished running 1 incremental model, 4 table models in 0 hours 0 minutes and 25.89 seconds (25.89s).
+[2025-10-30T05:02:45.099+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.101+0000] {subprocess.py:93} INFO - [0m05:02:45  [31mCompleted with 4 errors, 0 partial successs, and 0 warnings:[0m
+[2025-10-30T05:02:45.106+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.113+0000] {subprocess.py:93} INFO - [0m05:02:45    Database Error in model dim_card_holder (models/datamart/dim_card_holder.sql)
+[2025-10-30T05:02:45.114+0000] {subprocess.py:93} INFO -   relation "dim_card_holder" already exists
+[2025-10-30T05:02:45.116+0000] {subprocess.py:93} INFO -   compiled code at target/run/dbt_project/models/datamart/dim_card_holder.sql
+[2025-10-30T05:02:45.137+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.177+0000] {subprocess.py:93} INFO - [0m05:02:45    Database Error in model dim_corridor (models/datamart/dim_corridor.sql)
+[2025-10-30T05:02:45.185+0000] {subprocess.py:93} INFO -   relation "dim_corridor" already exists
+[2025-10-30T05:02:45.186+0000] {subprocess.py:93} INFO -   compiled code at target/run/dbt_project/models/datamart/dim_corridor.sql
+[2025-10-30T05:02:45.201+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.205+0000] {subprocess.py:93} INFO - [0m05:02:45    Database Error in model dim_stop (models/datamart/dim_stop.sql)
+[2025-10-30T05:02:45.207+0000] {subprocess.py:93} INFO -   relation "dim_stop" already exists
+[2025-10-30T05:02:45.210+0000] {subprocess.py:93} INFO -   compiled code at target/run/dbt_project/models/datamart/dim_stop.sql
+[2025-10-30T05:02:45.213+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.218+0000] {subprocess.py:93} INFO - [0m05:02:45    Database Error in model dim_time (models/datamart/dim_time.sql)
+[2025-10-30T05:02:45.327+0000] {subprocess.py:93} INFO -   relation "dim_time" already exists
+[2025-10-30T05:02:45.331+0000] {subprocess.py:93} INFO -   compiled code at target/run/dbt_project/models/datamart/dim_time.sql
+[2025-10-30T05:02:45.335+0000] {subprocess.py:93} INFO - [0m05:02:45
+[2025-10-30T05:02:45.365+0000] {subprocess.py:93} INFO - [0m05:02:45  Done. PASS=0 WARN=0 ERROR=4 SKIP=1 TOTAL=5
+[2025-10-30T05:02:49.911+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-30T05:02:49.961+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-30T05:02:50.014+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_automation, task_id=dbt_run, execution_date=20251030T050002, start_date=20251030T050010, end_date=20251030T050250
+[2025-10-30T05:02:50.077+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 303 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 112)
+[2025-10-30T05:02:50.108+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-30T05:02:50.165+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

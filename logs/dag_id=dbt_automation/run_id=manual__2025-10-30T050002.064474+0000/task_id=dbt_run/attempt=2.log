@@ -1,0 +1,97 @@
+[2025-10-30T05:07:54.382+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [queued]>
+[2025-10-30T05:07:54.460+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [queued]>
+[2025-10-30T05:07:54.462+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-10-30T05:07:54.560+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-30 05:00:02.064474+00:00
+[2025-10-30T05:07:54.570+0000] {standard_task_runner.py:60} INFO - Started process 244 to run task
+[2025-10-30T05:07:54.579+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_automation', 'dbt_run', 'manual__2025-10-30T05:00:02.064474+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmp2adgd0sx']
+[2025-10-30T05:07:54.631+0000] {standard_task_runner.py:88} INFO - Job 305: Subtask dbt_run
+[2025-10-30T05:07:55.158+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_automation.dbt_run manual__2025-10-30T05:00:02.064474+00:00 [running]> on host 257bb6028ed5
+[2025-10-30T05:07:55.678+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dbt_automation' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-30T05:00:02.064474+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-30T05:00:02.064474+00:00'
+[2025-10-30T05:07:55.681+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-30T05:07:55.685+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-30T05:07:55.773+0000] {subprocess.py:86} INFO - Output:
+[2025-10-30T05:08:11.015+0000] {subprocess.py:93} INFO - [0m05:08:11  Running with dbt=1.9.0-b2
+[2025-10-30T05:08:11.895+0000] {subprocess.py:93} INFO - [0m05:08:11  Registered adapter: postgres=1.8.2
+[2025-10-30T05:08:14.727+0000] {subprocess.py:93} INFO - [0m05:08:14  Found 5 models, 14 data tests, 1 source, 423 macros
+[2025-10-30T05:08:14.737+0000] {subprocess.py:93} INFO - [0m05:08:14
+[2025-10-30T05:08:14.738+0000] {subprocess.py:93} INFO - [0m05:08:14  Concurrency: 1 threads (target='dev')
+[2025-10-30T05:08:14.741+0000] {subprocess.py:93} INFO - [0m05:08:14
+[2025-10-30T05:08:14.993+0000] {subprocess.py:93} INFO - [0m05:08:14  1 of 5 START sql table model datamart.dim_card_holder .......................... [RUN]
+[2025-10-30T05:08:16.061+0000] {subprocess.py:93} INFO - [0m05:08:16  1 of 5 OK created sql table model datamart.dim_card_holder ..................... [[32mSELECT 10000[0m in 1.06s]
+[2025-10-30T05:08:16.068+0000] {subprocess.py:93} INFO - [0m05:08:16  2 of 5 START sql table model datamart.dim_corridor ............................. [RUN]
+[2025-10-30T05:08:16.872+0000] {subprocess.py:93} INFO - [0m05:08:16  2 of 5 OK created sql table model datamart.dim_corridor ........................ [[32mSELECT 221[0m in 0.80s]
+[2025-10-30T05:08:16.877+0000] {subprocess.py:93} INFO - [0m05:08:16  3 of 5 START sql table model datamart.dim_stop ................................. [RUN]
+[2025-10-30T05:08:17.422+0000] {subprocess.py:93} INFO - [0m05:08:17  3 of 5 OK created sql table model datamart.dim_stop ............................ [[32mSELECT 5851[0m in 0.54s]
+[2025-10-30T05:08:17.430+0000] {subprocess.py:93} INFO - [0m05:08:17  4 of 5 START sql table model datamart.dim_time ................................. [RUN]
+[2025-10-30T05:08:18.755+0000] {subprocess.py:93} INFO - [0m05:08:18  4 of 5 OK created sql table model datamart.dim_time ............................ [[32mSELECT 27836[0m in 1.30s]
+[2025-10-30T05:08:18.764+0000] {subprocess.py:93} INFO - [0m05:08:18  5 of 5 START sql incremental model datamart.fact_transactions .................. [RUN]
+[2025-10-30T05:14:34.068+0000] {subprocess.py:93} INFO - [0m05:14:34  5 of 5 ERROR creating sql incremental model datamart.fact_transactions ......... [[31mERROR[0m in 375.28s]
+[2025-10-30T05:14:34.044+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 202, in heartbeat
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 351, in _update_heartbeat
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2469, in commit
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2659, in _do_commit
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2630, in _connection_commit_impl
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-10-30T05:14:34.091+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-10-30T05:14:34.328+0000] {process_utils.py:131} INFO - Sending 15 to group 244. PIDs of all processes in the group: [245, 246, 248, 244]
+[2025-10-30T05:14:34.352+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 244
+[2025-10-30T05:14:34.364+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-10-30T05:14:34.365+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-10-30T05:14:34.405+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 203, in execute
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 98, in run_command
+  File "/usr/local/lib/python3.8/contextlib.py", line 525, in __exit__
+  File "/usr/local/lib/python3.8/contextlib.py", line 510, in __exit__
+  File "/usr/local/lib/python3.8/tempfile.py", line 827, in __exit__
+  File "/usr/local/lib/python3.8/tempfile.py", line 831, in cleanup
+  File "/usr/local/lib/python3.8/tempfile.py", line 813, in _rmtree
+  File "/usr/local/lib/python3.8/shutil.py", line 722, in rmtree
+  File "/usr/local/lib/python3.8/shutil.py", line 720, in rmtree
+OSError: [Errno 5] Input/output error: '/tmp/airflowtmppzx10316'
+[2025-10-30T05:14:44.465+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 305 for task dbt_run ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 244)
+[2025-10-30T05:14:45.079+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=245, status='terminated', started='05:07:55') (245) terminated with exit code None
+[2025-10-30T05:14:45.128+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=244, status='terminated', exitcode=1, started='05:07:53') (244) terminated with exit code 1
+[2025-10-30T05:15:39.888+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=248, name='python', status='sleeping', started='05:08:08') did not respond to SIGTERM. Trying SIGKILL
+[2025-10-30T05:15:42.779+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=246, name='dbt', status='disk-sleep', started='05:07:55') did not respond to SIGTERM. Trying SIGKILL
+[2025-10-30T05:15:42.781+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 244
+[2025-10-30T05:15:42.783+0000] {process_utils.py:100} INFO - Sending the signal 9 to process 244 as process group is missing.
+[2025-10-30T05:15:50.774+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=246, name='dbt', status='terminated', started='05:07:55') (246) terminated with exit code None
+[2025-10-30T05:15:51.205+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=248, name='python', status='terminated', started='05:08:08') (248) terminated with exit code None

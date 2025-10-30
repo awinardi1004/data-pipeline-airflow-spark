@@ -89,48 +89,42 @@ models:
         tests:
           - unique
           - not_null
-      - name: passenger_id
+      - name: payment_card_id
         description: "Foreign key to dim_passenger"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_card_holder')
-                field: payment_card_id
+              to: ref('dim_card_holder')
+              field: payment_card_id
       - name: corridor_id
         description: "Foreign key to dim_corridor"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_corridor')
-                field: corridor_id
+              to: ref('dim_corridor')
+              field: corridor_id
       - name: tap_in_stop_id
         description: "Foreign key to dim_stop for boarding stop"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_stop')
-                field: stop_id
+              to: ref('dim_stop')
+              field: stop_id
       - name: tap_out_stop_id
         description: "Foreign key to dim_stop for alighting stop"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_stop')
-                field: stop_id
+              to: ref('dim_stop')
+              field: stop_id
       - name: time_id_in
         description: "Foreign key to dim_time (boarding time)"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_time')
-                field: time_id
+              to: ref('dim_time')
+              field: time_id
       - name: time_id_out
         description: "Foreign key to dim_time (alighting time)"
         tests:
           - relationships:
-              arguments:
-                to: ref('dim_time')
-                field: time_id
+              to: ref('dim_time')
+              field: time_id
       - name: direction
         description: "Travel direction"
       - name: stop_start_seq
