@@ -10,7 +10,7 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
 }
 
-# Lokasi direktori di dalam container
+
 DBT_PROJECT_DIR = "/opt/airflow/include/dbt/dbt_project"
 DBT_PROFILE_DIR = "/home/airflow/.dbt"
 
@@ -18,7 +18,7 @@ with DAG(
     dag_id="dag_dbt_pipeline",
     default_args=default_args,
     description="Run and test dbt project inside Airflow container",
-    schedule_interval="@daily",  # ganti sesuai kebutuhan (misal None, @hourly, dll)
+    schedule_interval="@daily",
     catchup=False,
     tags=["dbt", "local", "pipeline"],
 ) as dag:
