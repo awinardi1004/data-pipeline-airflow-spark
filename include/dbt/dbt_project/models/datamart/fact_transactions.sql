@@ -2,7 +2,6 @@
     materialized='incremental',
     unique_key='transaction_id',
     post_hook=[
-        "ALTER TABLE {{ this }} ADD PRIMARY KEY (transaction_id)",
         "ALTER TABLE {{ this }} ADD CONSTRAINT fk_passenger FOREIGN KEY (payment_card_id) REFERENCES {{ ref('dim_card_holder') }}(payment_card_id)",
         "ALTER TABLE {{ this }} ADD CONSTRAINT fk_corridor FOREIGN KEY (corridor_id) REFERENCES {{ ref('dim_corridor') }}(corridor_id)",
         "ALTER TABLE {{ this }} ADD CONSTRAINT fk_tapin FOREIGN KEY (tap_in_stop_id) REFERENCES {{ ref('dim_stop') }}(stop_id)",
@@ -29,9 +28,19 @@ WITH src AS (
         "stopEndSeq" AS stop_end_seq,
         EXTRACT(EPOCH FROM ("tapOutTime"::timestamp - "tapInTime"::timestamp)) / 60 AS duration_minutes,
         NULL::FLOAT AS distance_km,
-        "payAmount" AS pay_amount
+        "payAmount" AS pay_amount,
+        "tapInTime"::timestamp AS tap_in_timestamp
     FROM {{ source('staging', 'stg_transactions') }}
     WHERE "payAmount" IS NOT NULL
+    {% if is_incremental() %}
+        -- Filter berdasarkan timestamp asli untuk performa optimal
+        AND "tapInTime"::timestamp > COALESCE(
+            (SELECT MAX(TO_TIMESTAMP(time_id_in::text, 'YYYYMMDDHH24MI')) 
+             FROM {{ this }} 
+             WHERE time_id_in IS NOT NULL),
+            '1900-01-01'::timestamp
+        )
+    {% endif %}
 ),
 
 corridor_lookup AS (
@@ -64,7 +73,6 @@ fact AS (
         s.payment_card_id,
         COALESCE(s.corridor_id, c.corridor_id) AS corridor_id,
         COALESCE(s.tap_in_stop_id, sl_in.stop_id) AS tap_in_stop_id,
-        -- Tap out stop ID akan NULL jika tidak ditemukan
         CASE 
             WHEN s.tap_out_stop_id IS NOT NULL THEN s.tap_out_stop_id
             WHEN s.tap_out_stop_name IS NOT NULL THEN sl_out.stop_id
@@ -89,9 +97,6 @@ fact AS (
         AND COALESCE(s.tap_in_stop_id, sl_in.stop_id) IS NOT NULL
 )
 
--- Pilih hasil akhir, incremental-safe
+-- Langsung SELECT tanpa filter tambahan
 SELECT * 
 FROM fact
-{% if is_incremental() %}
-WHERE transaction_id NOT IN (SELECT transaction_id FROM {{ this }})
-{% endif %}

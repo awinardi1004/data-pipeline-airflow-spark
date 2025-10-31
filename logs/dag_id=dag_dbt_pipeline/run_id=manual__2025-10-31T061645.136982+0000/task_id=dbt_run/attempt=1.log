@@ -1,0 +1,50 @@
+[2025-10-31T06:17:03.313+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-31T06:16:45.136982+00:00 [queued]>
+[2025-10-31T06:17:03.373+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-31T06:16:45.136982+00:00 [queued]>
+[2025-10-31T06:17:03.377+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-10-31T06:17:03.458+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-31 06:16:45.136982+00:00
+[2025-10-31T06:17:03.530+0000] {standard_task_runner.py:60} INFO - Started process 81 to run task
+[2025-10-31T06:17:03.614+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_dbt_pipeline', 'dbt_run', 'manual__2025-10-31T06:16:45.136982+00:00', '--job-id', '360', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmpe4l_af3e']
+[2025-10-31T06:17:03.618+0000] {standard_task_runner.py:88} INFO - Job 360: Subtask dbt_run
+[2025-10-31T06:17:04.121+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-31T06:16:45.136982+00:00 [running]> on host 257bb6028ed5
+[2025-10-31T06:17:04.558+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dag_dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T06:16:45.136982+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-31T06:16:45.136982+00:00'
+[2025-10-31T06:17:04.562+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T06:17:04.566+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-31T06:17:04.635+0000] {subprocess.py:86} INFO - Output:
+[2025-10-31T06:17:16.920+0000] {subprocess.py:93} INFO - [0m06:17:16  Running with dbt=1.9.0-b2
+[2025-10-31T06:17:19.113+0000] {subprocess.py:93} INFO - [0m06:17:19  Registered adapter: postgres=1.8.2
+[2025-10-31T06:17:23.670+0000] {subprocess.py:93} INFO - [0m06:17:23  Found 5 models, 16 data tests, 1 source, 423 macros
+[2025-10-31T06:17:23.682+0000] {subprocess.py:93} INFO - [0m06:17:23
+[2025-10-31T06:17:23.687+0000] {subprocess.py:93} INFO - [0m06:17:23  Concurrency: 1 threads (target='dev')
+[2025-10-31T06:17:23.691+0000] {subprocess.py:93} INFO - [0m06:17:23
+[2025-10-31T06:17:25.034+0000] {subprocess.py:93} INFO - [0m06:17:25  1 of 5 START sql table model datamart.dim_card_holder .......................... [RUN]
+[2025-10-31T06:17:35.244+0000] {subprocess.py:93} INFO - [0m06:17:35  1 of 5 OK created sql table model datamart.dim_card_holder ..................... [[32mSELECT 10000[0m in 10.20s]
+[2025-10-31T06:17:35.327+0000] {subprocess.py:93} INFO - [0m06:17:35  2 of 5 START sql table model datamart.dim_corridor ............................. [RUN]
+[2025-10-31T06:17:41.205+0000] {subprocess.py:93} INFO - [0m06:17:41  2 of 5 OK created sql table model datamart.dim_corridor ........................ [[32mSELECT 221[0m in 5.83s]
+[2025-10-31T06:17:41.285+0000] {subprocess.py:93} INFO - [0m06:17:41  3 of 5 START sql table model datamart.dim_stop ................................. [RUN]
+[2025-10-31T06:17:44.465+0000] {subprocess.py:93} INFO - [0m06:17:44  3 of 5 OK created sql table model datamart.dim_stop ............................ [[32mSELECT 5851[0m in 3.16s]
+[2025-10-31T06:17:44.540+0000] {subprocess.py:93} INFO - [0m06:17:44  4 of 5 START sql table model datamart.dim_time ................................. [RUN]
+[2025-10-31T06:17:47.026+0000] {subprocess.py:93} INFO - [0m06:17:47  4 of 5 OK created sql table model datamart.dim_time ............................ [[32mSELECT 27836[0m in 2.44s]
+[2025-10-31T06:17:47.072+0000] {subprocess.py:93} INFO - [0m06:17:47  5 of 5 START sql incremental model datamart.fact_transactions .................. [RUN]
+[2025-10-31T06:17:50.522+0000] {subprocess.py:93} INFO - [0m06:17:50  5 of 5 ERROR creating sql incremental model datamart.fact_transactions ......... [[31mERROR[0m in 3.44s]
+[2025-10-31T06:17:50.680+0000] {subprocess.py:93} INFO - [0m06:17:50
+[2025-10-31T06:17:50.686+0000] {subprocess.py:93} INFO - [0m06:17:50  Finished running 1 incremental model, 4 table models in 0 hours 0 minutes and 26.99 seconds (26.99s).
+[2025-10-31T06:17:51.558+0000] {subprocess.py:93} INFO - [0m06:17:51
+[2025-10-31T06:17:51.566+0000] {subprocess.py:93} INFO - [0m06:17:51  [31mCompleted with 1 error, 0 partial successs, and 0 warnings:[0m
+[2025-10-31T06:17:51.567+0000] {subprocess.py:93} INFO - [0m06:17:51
+[2025-10-31T06:17:51.569+0000] {subprocess.py:93} INFO - [0m06:17:51    Database Error in model fact_transactions (models/datamart/fact_transactions.sql)
+[2025-10-31T06:17:51.571+0000] {subprocess.py:93} INFO -   multiple primary keys for table "fact_transactions" are not allowed
+[2025-10-31T06:17:51.573+0000] {subprocess.py:93} INFO -   compiled code at target/run/dbt_project/models/datamart/fact_transactions.sql
+[2025-10-31T06:17:51.582+0000] {subprocess.py:93} INFO - [0m06:17:51
+[2025-10-31T06:17:51.589+0000] {subprocess.py:93} INFO - [0m06:17:51  Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[2025-10-31T06:17:55.451+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-31T06:17:55.559+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-31T06:17:55.636+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_dbt_pipeline, task_id=dbt_run, execution_date=20251031T061645, start_date=20251031T061703, end_date=20251031T061755
+[2025-10-31T06:17:55.800+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 360 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 81)
+[2025-10-31T06:17:55.861+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-31T06:17:55.909+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
