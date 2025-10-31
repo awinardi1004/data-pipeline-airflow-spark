@@ -1,0 +1,30 @@
+[2025-10-31T02:09:46.659+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run scheduled__2025-10-30T00:00:00+00:00 [queued]>
+[2025-10-31T02:09:48.846+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_dbt_pipeline.dbt_run scheduled__2025-10-30T00:00:00+00:00 [queued]>
+[2025-10-31T02:09:48.940+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-10-31T02:09:51.336+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): dbt_run> on 2025-10-30 00:00:00+00:00
+[2025-10-31T02:09:51.539+0000] {standard_task_runner.py:60} INFO - Started process 113 to run task
+[2025-10-31T02:09:51.551+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_dbt_pipeline', 'dbt_run', 'scheduled__2025-10-30T00:00:00+00:00', '--job-id', '338', '--raw', '--subdir', 'DAGS_FOLDER/dbt_local_dag.py', '--cfg-path', '/tmp/tmpvovsppor']
+[2025-10-31T02:09:51.686+0000] {standard_task_runner.py:88} INFO - Job 338: Subtask dbt_run
+[2025-10-31T02:09:55.439+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_dbt_pipeline.dbt_run scheduled__2025-10-30T00:00:00+00:00 [running]> on host 257bb6028ed5
+[2025-10-31T02:10:00.502+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='winardi' AIRFLOW_CTX_DAG_ID='dag_dbt_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-10-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-30T00:00:00+00:00'
+[2025-10-31T02:10:01.062+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T02:10:01.569+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/include/dbt/dbt_project &&             dbt run --profiles-dir /home/***/.dbt --target dev\n        ']
+[2025-10-31T02:10:02.939+0000] {subprocess.py:86} INFO - Output:
+[2025-10-31T02:12:00.259+0000] {subprocess.py:93} INFO - [0m02:12:00  Running with dbt=1.9.0-b2
+[2025-10-31T02:12:08.623+0000] {subprocess.py:93} INFO - [0m02:12:08  Registered adapter: postgres=1.8.2
+[2025-10-31T02:12:16.555+0000] {subprocess.py:93} INFO - [0m02:12:16  Unable to do partial parsing because of a version mismatch
+[2025-10-31T02:12:55.352+0000] {subprocess.py:93} INFO - [0m02:12:55  Encountered an error:
+[2025-10-31T02:12:55.353+0000] {subprocess.py:93} INFO - Compilation Error in test relationships_fact_transactions_ref_dim_card_holder___payment_card_id__payment_card_id (models/datamart/schema.yml)
+[2025-10-31T02:12:55.419+0000] {subprocess.py:93} INFO -   macro 'dbt_macro__test_relationships' takes no keyword argument 'arguments'
+[2025-10-31T02:13:01.571+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-10-31T02:13:06.769+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-10-31T02:13:07.521+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_dbt_pipeline, task_id=dbt_run, execution_date=20251030T000000, start_date=20251031T020947, end_date=20251031T021306
+[2025-10-31T02:13:10.249+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 338 for task dbt_run (Bash command failed. The command returned a non-zero exit code 2.; 113)
+[2025-10-31T02:13:10.730+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-31T02:13:14.546+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -41,7 +41,7 @@ models:
       - name: age_group
         description: "Categorized age group of the passenger."
   
-  - name: dim_date
+  - name: dim_time
     description: "Dimension table containing unique time identifiers for date and time analysis."
     columns:
       - name: time_id

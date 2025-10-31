@@ -1,0 +1,2 @@
+[2025-10-31T02:10:38.322+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: dag_dbt_pipeline.dbt_run manual__2025-10-30T14:48:57.989952+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-10-31T02:10:38.848+0000] {local_task_job_runner.py:160} INFO - Task is not able to be run
