@@ -23,7 +23,6 @@ with DAG(
     tags=["dbt", "local", "pipeline"],
 ) as dag:
 
-    # Task 1: dbt run
     dbt_run = BashOperator(
         task_id="dbt_run",
         bash_command=f"""
@@ -32,7 +31,6 @@ with DAG(
         """,
     )
 
-    # Task 2: dbt test
     dbt_test = BashOperator(
         task_id="dbt_test",
         bash_command=f"""

@@ -33,7 +33,6 @@ WITH src AS (
     FROM {{ source('staging', 'stg_transactions') }}
     WHERE "payAmount" IS NOT NULL
     {% if is_incremental() %}
-        -- Filter berdasarkan timestamp asli untuk performa optimal
         AND "tapInTime"::timestamp > COALESCE(
             (SELECT MAX(TO_TIMESTAMP(time_id_in::text, 'YYYYMMDDHH24MI')) 
              FROM {{ this }} 
